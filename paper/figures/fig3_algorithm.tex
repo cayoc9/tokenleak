@@ -32,7 +32,7 @@ $\mathbf{C} \leftarrow \{c_1, c_2, \ldots, c_n\}$ \Comment*[r]{Agent 2 (CPA) rec
 \tcp{\textbf{Phase 3: Token Reconstruction (Agent 3)}}
 \For{each position $j = 1, \ldots, n$}{
     \For{each candidate $\tau \in \mathcal{V}$}{
-        \tcp{\textbf{TRCS (Eq.~2, novel metric):}}
+        \tcp{\textbf{TRCS (Eq.~1, novel metric):}}
         $\mathrm{TRCS}(\tau, \mathbf{O}_j) \leftarrow
            \bigl(\sum_{i} w_i\,\varphi_i(\tau, O_{i,j})\bigr) / \sum_{i} w_i$\;
         where $\varphi_1(\tau, t_j) = \exp\!\bigl(-(t_j{-}\mu_\tau)^2 / 2\sigma_\tau^2\bigr)$\;
