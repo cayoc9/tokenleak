@@ -1,0 +1,22 @@
+# TokenLeak — Python dependencies
+# Python 3.11.9 (as used in the paper)
+# Install: pip install -r requirements.txt
+
+# Core numeric / scientific
+numpy==1.26.0
+scipy==1.13.0
+pandas==2.2.2
+
+# Machine learning
+scikit-learn==1.4.1
+
+# Deep learning + LLM (required for full GPT-2 timing collection)
+torch==2.3.0
+transformers==4.41.2
+
+# Visualization (figures)
+matplotlib==3.8.4
+
+# Notebooks
+jupyter==1.0.0
+ipykernel==6.29.4
