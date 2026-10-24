@@ -1,0 +1,53 @@
+{
+  "checks": {
+    "prompt_count": true,
+    "unique_ids": true,
+    "unique_texts": true,
+    "category_count": true,
+    "lengths": true,
+    "vocabulary_size": true,
+    "frequency_contract": true,
+    "train_validation_test_disjoint": true,
+    "group_disjoint": true,
+    "split_80_20": true,
+    "all_members_accounted": true,
+    "retokenization": true
+  },
+  "passed": true,
+  "n_prompts": 5000,
+  "token_positions": 178209,
+  "unique_token_types": 8431,
+  "length_min": 8,
+  "length_max": 64,
+  "length_mean": 35.6418,
+  "frequent_types": 5227,
+  "rare_types": 3204,
+  "partition_sizes": {
+    "train": 3000,
+    "validation": 1000,
+    "test": 1000,
+    "profiling": 4000
+  },
+  "by_category": {
+    "C01": 250,
+    "C02": 250,
+    "C03": 250,
+    "C04": 250,
+    "C05": 250,
+    "C06": 250,
+    "C07": 250,
+    "C08": 250,
+    "C09": 250,
+    "C10": 250,
+    "C11": 250,
+    "C12": 250,
+    "C13": 250,
+    "C14": 250,
+    "C15": 250,
+    "C16": 250,
+    "C17": 250,
+    "C18": 250,
+    "C19": 250,
+    "C20": 250
+  }
+}

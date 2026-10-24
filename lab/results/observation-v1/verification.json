@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "predictions_checked": 1536,
+  "features_recomputed_from_observer": true,
+  "linear_decisions_recomputed_without_predict": true,
+  "labels_and_slot_checked": true,
+  "privileged_trace_excluded_from_features": true,
+  "observations": 2304,
+  "ground_truth_requests": 768,
+  "physical_cache_validation": false
+}

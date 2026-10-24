@@ -1,0 +1,275 @@
+{
+  "exploratory": true,
+  "seeds": [
+    0,
+    1
+  ],
+  "same_corpus_files": {
+    "corpus.jsonl": true,
+    "splits.json": true,
+    "vocabulary.json": true,
+    "generation.json": true
+  },
+  "shared_configuration_except": [
+    "experiment_name",
+    "signals.cache_fingerprint_groups",
+    "evaluation.round_seeds",
+    "evaluation.analysis_role"
+  ],
+  "primary_unchanged": true,
+  "comparison": [
+    {
+      "condition": "cache_only",
+      "metric": "top1_micro",
+      "reference_seeds_0_1": 0.9947003957037874,
+      "collisions128_seeds_0_1": 0.015192198982475976,
+      "difference": -0.9795081967213115
+    },
+    {
+      "condition": "cache_only",
+      "metric": "top5_micro",
+      "reference_seeds_0_1": 0.9988552854720181,
+      "collisions128_seeds_0_1": 0.07515545505935556,
+      "difference": -0.9236998304126625
+    },
+    {
+      "condition": "cache_only",
+      "metric": "prompt_exact_match",
+      "reference_seeds_0_1": 0.828,
+      "collisions128_seeds_0_1": 0.0,
+      "difference": -0.828
+    },
+    {
+      "condition": "cache_only",
+      "metric": "synthetic_protected_span_exact_match",
+      "reference_seeds_0_1": 0.9795,
+      "collisions128_seeds_0_1": 0.0,
+      "difference": -0.9795
+    },
+    {
+      "condition": "constant_signals",
+      "metric": "top1_micro",
+      "reference_seeds_0_1": 1.4132278123233465e-05,
+      "collisions128_seeds_0_1": 1.4132278123233465e-05,
+      "difference": 0.0
+    },
+    {
+      "condition": "constant_signals",
+      "metric": "top5_micro",
+      "reference_seeds_0_1": 0.00015545505935556813,
+      "collisions128_seeds_0_1": 0.00015545505935556813,
+      "difference": 0.0
+    },
+    {
+      "condition": "constant_signals",
+      "metric": "prompt_exact_match",
+      "reference_seeds_0_1": 0.0,
+      "collisions128_seeds_0_1": 0.0,
+      "difference": 0.0
+    },
+    {
+      "condition": "constant_signals",
+      "metric": "synthetic_protected_span_exact_match",
+      "reference_seeds_0_1": 0.0,
+      "collisions128_seeds_0_1": 0.0,
+      "difference": 0.0
+    },
+    {
+      "condition": "frequency_prior",
+      "metric": "top1_micro",
+      "reference_seeds_0_1": 0.08617863199547766,
+      "collisions128_seeds_0_1": 0.08617863199547766,
+      "difference": 0.0
+    },
+    {
+      "condition": "frequency_prior",
+      "metric": "top5_micro",
+      "reference_seeds_0_1": 0.20019785189372527,
+      "collisions128_seeds_0_1": 0.20019785189372527,
+      "difference": 0.0
+    },
+    {
+      "condition": "frequency_prior",
+      "metric": "prompt_exact_match",
+      "reference_seeds_0_1": 0.0,
+      "collisions128_seeds_0_1": 0.0,
+      "difference": 0.0
+    },
+    {
+      "condition": "frequency_prior",
+      "metric": "synthetic_protected_span_exact_match",
+      "reference_seeds_0_1": 0.002,
+      "collisions128_seeds_0_1": 0.002,
+      "difference": 0.0
+    },
+    {
+      "condition": "fusion_fixed",
+      "metric": "top1_micro",
+      "reference_seeds_0_1": 0.553024307518372,
+      "collisions128_seeds_0_1": 0.04584511023176936,
+      "difference": -0.5071791972866025
+    },
+    {
+      "condition": "fusion_fixed",
+      "metric": "top5_micro",
+      "reference_seeds_0_1": 0.6018371961560203,
+      "collisions128_seeds_0_1": 0.22531091011871113,
+      "difference": -0.37652628603730914
+    },
+    {
+      "condition": "fusion_fixed",
+      "metric": "prompt_exact_match",
+      "reference_seeds_0_1": 0.0,
+      "collisions128_seeds_0_1": 0.0,
+      "difference": 0.0
+    },
+    {
+      "condition": "fusion_fixed",
+      "metric": "synthetic_protected_span_exact_match",
+      "reference_seeds_0_1": 0.172,
+      "collisions128_seeds_0_1": 0.0,
+      "difference": -0.172
+    },
+    {
+      "condition": "fusion_learned",
+      "metric": "top1_micro",
+      "reference_seeds_0_1": 0.9957744488411532,
+      "collisions128_seeds_0_1": 0.04638213680045224,
+      "difference": -0.949392312040701
+    },
+    {
+      "condition": "fusion_learned",
+      "metric": "top5_micro",
+      "reference_seeds_0_1": 0.9991379310344828,
+      "collisions128_seeds_0_1": 0.2203504804974562,
+      "difference": -0.7787874505370266
+    },
+    {
+      "condition": "fusion_learned",
+      "metric": "prompt_exact_match",
+      "reference_seeds_0_1": 0.8625,
+      "collisions128_seeds_0_1": 0.0,
+      "difference": -0.8625
+    },
+    {
+      "condition": "fusion_learned",
+      "metric": "synthetic_protected_span_exact_match",
+      "reference_seeds_0_1": 0.982,
+      "collisions128_seeds_0_1": 0.0005,
+      "difference": -0.9815
+    },
+    {
+      "condition": "fusion_learned_pruned",
+      "metric": "top1_micro",
+      "reference_seeds_0_1": 0.9917750141322781,
+      "collisions128_seeds_0_1": 0.04690503109101187,
+      "difference": -0.9448699830412662
+    },
+    {
+      "condition": "fusion_learned_pruned",
+      "metric": "top5_micro",
+      "reference_seeds_0_1": 0.9948417184850198,
+      "collisions128_seeds_0_1": 0.22328999434708874,
+      "difference": -0.771551724137931
+    },
+    {
+      "condition": "fusion_learned_pruned",
+      "metric": "prompt_exact_match",
+      "reference_seeds_0_1": 0.7515000000000001,
+      "collisions128_seeds_0_1": 0.0,
+      "difference": -0.7515000000000001
+    },
+    {
+      "condition": "fusion_learned_pruned",
+      "metric": "synthetic_protected_span_exact_match",
+      "reference_seeds_0_1": 0.9704999999999999,
+      "collisions128_seeds_0_1": 0.0005,
+      "difference": -0.97
+    },
+    {
+      "condition": "permuted_observation_pairs",
+      "metric": "top1_micro",
+      "reference_seeds_0_1": 0.012379875635952515,
+      "collisions128_seeds_0_1": 0.0004522328999434709,
+      "difference": -0.011927642736009044
+    },
+    {
+      "condition": "permuted_observation_pairs",
+      "metric": "top5_micro",
+      "reference_seeds_0_1": 0.012902769926512153,
+      "collisions128_seeds_0_1": 0.0029677784058790278,
+      "difference": -0.009934991520633126
+    },
+    {
+      "condition": "permuted_observation_pairs",
+      "metric": "prompt_exact_match",
+      "reference_seeds_0_1": 0.0,
+      "collisions128_seeds_0_1": 0.0,
+      "difference": 0.0
+    },
+    {
+      "condition": "permuted_observation_pairs",
+      "metric": "synthetic_protected_span_exact_match",
+      "reference_seeds_0_1": 0.0,
+      "collisions128_seeds_0_1": 0.0,
+      "difference": 0.0
+    },
+    {
+      "condition": "timing_only",
+      "metric": "top1_micro",
+      "reference_seeds_0_1": 0.00042396834369700395,
+      "collisions128_seeds_0_1": 0.00042396834369700395,
+      "difference": 0.0
+    },
+    {
+      "condition": "timing_only",
+      "metric": "top5_micro",
+      "reference_seeds_0_1": 0.0018937252685132843,
+      "collisions128_seeds_0_1": 0.0018937252685132843,
+      "difference": 0.0
+    },
+    {
+      "condition": "timing_only",
+      "metric": "prompt_exact_match",
+      "reference_seeds_0_1": 0.0,
+      "collisions128_seeds_0_1": 0.0,
+      "difference": 0.0
+    },
+    {
+      "condition": "timing_only",
+      "metric": "synthetic_protected_span_exact_match",
+      "reference_seeds_0_1": 0.0,
+      "collisions128_seeds_0_1": 0.0,
+      "difference": 0.0
+    },
+    {
+      "condition": "uniform_random",
+      "metric": "top1_micro",
+      "reference_seeds_0_1": 4.23968343697004e-05,
+      "collisions128_seeds_0_1": 4.23968343697004e-05,
+      "difference": 0.0
+    },
+    {
+      "condition": "uniform_random",
+      "metric": "top5_micro",
+      "reference_seeds_0_1": 0.0004804974561899378,
+      "collisions128_seeds_0_1": 0.0004804974561899378,
+      "difference": 0.0
+    },
+    {
+      "condition": "uniform_random",
+      "metric": "prompt_exact_match",
+      "reference_seeds_0_1": 0.0,
+      "collisions128_seeds_0_1": 0.0,
+      "difference": 0.0
+    },
+    {
+      "condition": "uniform_random",
+      "metric": "synthetic_protected_span_exact_match",
+      "reference_seeds_0_1": 0.0,
+      "collisions128_seeds_0_1": 0.0,
+      "difference": 0.0
+    }
+  ],
+  "interpretation": "Sensitivity to an assumed abstract channel; not hardware calibration or proof of physical leakage"
+}

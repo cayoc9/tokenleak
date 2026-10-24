@@ -1,0 +1,8 @@
+# Preserve reference assets and generated evidence byte for byte on checkout.
+lab/assets/** -text
+lab/data/** -text
+lab/results/** -text
+# CMUdict files are third-party originals; retain their original whitespace.
+lab/assets/cmudict/** -whitespace
+# CSV writer outputs use CRLF, which is part of the preserved evidence.
+lab/results/**/*.csv whitespace=cr-at-eol

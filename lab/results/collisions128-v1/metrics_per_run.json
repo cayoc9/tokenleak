@@ -1,0 +1,1874 @@
+[
+  {
+    "positions": 35380,
+    "prompts": 1000,
+    "correct_top1": 3049,
+    "correct_top5": 7083,
+    "top1_micro": 0.08617863199547766,
+    "top5_micro": 0.20019785189372527,
+    "top1_prompt_macro": 0.08287822187351178,
+    "top5_prompt_macro": 0.2024062055267305,
+    "prompt_exact_match": 0.0,
+    "synthetic_protected_span_exact_match": 0.002,
+    "protected_span_count": 1000,
+    "token_balanced_recall": 0.0001599488163787588,
+    "token_macro_f1_observed_true_classes": 2.538103729677252e-05,
+    "rare_token_count": 1845,
+    "rare_token_top1": 0.0,
+    "frequent_token_top1": 0.09091993439689876,
+    "normalized_edit_distance": null,
+    "by_category": {
+      "C01": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.08792933965107162
+      },
+      "C02": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.07877436744623528
+      },
+      "C03": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.10023671229441126
+      },
+      "C04": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.07651924284270901
+      },
+      "C05": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.08293735549096702
+      },
+      "C06": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.07946669867443407
+      },
+      "C07": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.07651318476410092
+      },
+      "C08": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.09497918487910967
+      },
+      "C09": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.08942756884777779
+      },
+      "C10": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.07592199690071837
+      },
+      "C11": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0810500343401382
+      },
+      "C12": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.08389209304264447
+      },
+      "C13": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.08808217691268251
+      },
+      "C14": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.08186464844694219
+      },
+      "C15": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.08612804604268036
+      },
+      "C16": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.081966743517769
+      },
+      "C17": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.07059743295307784
+      },
+      "C18": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.07703280078715063
+      },
+      "C19": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.08511889166605494
+      },
+      "C20": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.07912591796956009
+      }
+    },
+    "scope": "Known input positions, synthetic signals and synthetic protected keyword spans; no physical leakage demonstrated.",
+    "condition": "frequency_prior",
+    "seed": 0
+  },
+  {
+    "positions": 35380,
+    "prompts": 1000,
+    "correct_top1": 1,
+    "correct_top5": 14,
+    "top1_micro": 2.826455624646693e-05,
+    "top5_micro": 0.00039570378745053703,
+    "top1_prompt_macro": 2.631578947368421e-05,
+    "top5_prompt_macro": 0.00035863946449168693,
+    "prompt_exact_match": 0.0,
+    "synthetic_protected_span_exact_match": 0.0,
+    "protected_span_count": 1000,
+    "token_balanced_recall": 5.331627212625293e-05,
+    "token_macro_f1_observed_true_classes": 3.99872040946897e-05,
+    "rare_token_count": 1845,
+    "rare_token_top1": 0.0,
+    "frequent_token_top1": 2.981959147159684e-05,
+    "normalized_edit_distance": null,
+    "by_category": {
+      "C01": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C02": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C03": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0005263157894736842
+      },
+      "C04": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C05": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C06": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C07": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C08": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C09": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C10": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C11": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C12": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C13": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C14": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C15": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C16": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C17": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C18": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C19": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C20": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      }
+    },
+    "scope": "Known input positions, synthetic signals and synthetic protected keyword spans; no physical leakage demonstrated.",
+    "condition": "uniform_random",
+    "seed": 0
+  },
+  {
+    "positions": 35380,
+    "prompts": 1000,
+    "correct_top1": 12,
+    "correct_top5": 67,
+    "top1_micro": 0.0003391746749576032,
+    "top5_micro": 0.0018937252685132843,
+    "top1_prompt_macro": 0.00032471711501907963,
+    "top5_prompt_macro": 0.0017181622542126141,
+    "prompt_exact_match": 0.0,
+    "synthetic_protected_span_exact_match": 0.0,
+    "protected_span_count": 1000,
+    "token_balanced_recall": 0.00038583991374731595,
+    "token_macro_f1_observed_true_classes": 0.0001525576730866132,
+    "rare_token_count": 1845,
+    "rare_token_top1": 0.0005420054200542005,
+    "frequent_token_top1": 0.00032801550618756525,
+    "normalized_edit_distance": null,
+    "by_category": {
+      "C01": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C02": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C03": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0003225806451612903
+      },
+      "C04": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.001794128177586824
+      },
+      "C05": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C06": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C07": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0009523809523809524
+      },
+      "C08": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0004
+      },
+      "C09": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C10": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C11": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C12": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C13": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0005555555555555556
+      },
+      "C14": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C15": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0004761904761904762
+      },
+      "C16": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.00035714285714285714
+      },
+      "C17": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0006060606060606061
+      },
+      "C18": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C19": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C20": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0010303030303030303
+      }
+    },
+    "scope": "Known input positions, synthetic signals and synthetic protected keyword spans; no physical leakage demonstrated.",
+    "condition": "timing_only",
+    "seed": 0
+  },
+  {
+    "positions": 35380,
+    "prompts": 1000,
+    "correct_top1": 543,
+    "correct_top5": 2675,
+    "top1_micro": 0.015347654041831544,
+    "top5_micro": 0.07560768795929904,
+    "top1_prompt_macro": 0.014732699062823445,
+    "top5_prompt_macro": 0.07436793484420451,
+    "prompt_exact_match": 0.0,
+    "synthetic_protected_span_exact_match": 0.0,
+    "protected_span_count": 1000,
+    "token_balanced_recall": 0.017707304407558196,
+    "token_macro_f1_observed_true_classes": 0.01392287913674419,
+    "rare_token_count": 1845,
+    "rare_token_top1": 0.01842818428184282,
+    "frequent_token_top1": 0.015178172059042792,
+    "normalized_edit_distance": null,
+    "by_category": {
+      "C01": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.012216306408518427
+      },
+      "C02": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.013424877105418499
+      },
+      "C03": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.014667091840396607
+      },
+      "C04": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.015346935468603879
+      },
+      "C05": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.011067698512900888
+      },
+      "C06": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.012508292701573567
+      },
+      "C07": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.018343081244908764
+      },
+      "C08": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.018434845486759197
+      },
+      "C09": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.015187440980842513
+      },
+      "C10": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.01598339364379745
+      },
+      "C11": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.015517978307475214
+      },
+      "C12": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.019651604645384856
+      },
+      "C13": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.017131229698978484
+      },
+      "C14": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.013342589365586483
+      },
+      "C15": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.01330502477236309
+      },
+      "C16": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.009702451129573771
+      },
+      "C17": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0121245806627981
+      },
+      "C18": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.01430395023879481
+      },
+      "C19": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.016576391043398465
+      },
+      "C20": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.015818217998395813
+      }
+    },
+    "scope": "Known input positions, synthetic signals and synthetic protected keyword spans; no physical leakage demonstrated.",
+    "condition": "cache_only",
+    "seed": 0
+  },
+  {
+    "positions": 35380,
+    "prompts": 1000,
+    "correct_top1": 1649,
+    "correct_top5": 7868,
+    "top1_micro": 0.04660825325042397,
+    "top5_micro": 0.2223855285472018,
+    "top1_prompt_macro": 0.04609860720865619,
+    "top5_prompt_macro": 0.21975255363512106,
+    "prompt_exact_match": 0.0,
+    "synthetic_protected_span_exact_match": 0.0,
+    "protected_span_count": 1000,
+    "token_balanced_recall": 0.051989481342903564,
+    "token_macro_f1_observed_true_classes": 0.03706221192864575,
+    "rare_token_count": 1845,
+    "rare_token_top1": 0.04932249322493225,
+    "frequent_token_top1": 0.04645892351274788,
+    "normalized_edit_distance": 0.9539013927913438,
+    "by_category": {
+      "C01": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04241265901056148
+      },
+      "C02": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.047439812505886296
+      },
+      "C03": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0372860789768661
+      },
+      "C04": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04424147745961394
+      },
+      "C05": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04131437470598618
+      },
+      "C06": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.05067056329028661
+      },
+      "C07": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0446488987719612
+      },
+      "C08": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04646077731502714
+      },
+      "C09": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0619088546263822
+      },
+      "C10": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.035780205815107144
+      },
+      "C11": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.043586591730731754
+      },
+      "C12": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04054799795377027
+      },
+      "C13": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.06209849457724017
+      },
+      "C14": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.040951724371260365
+      },
+      "C15": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.040718192466279876
+      },
+      "C16": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04946369510843925
+      },
+      "C17": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.06075919599922797
+      },
+      "C18": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0546377435246799
+      },
+      "C19": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.03578423716931692
+      },
+      "C20": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04126056879449916
+      }
+    },
+    "scope": "Known input positions, synthetic signals and synthetic protected keyword spans; no physical leakage demonstrated.",
+    "condition": "fusion_fixed",
+    "seed": 0
+  },
+  {
+    "positions": 35380,
+    "prompts": 1000,
+    "correct_top1": 1630,
+    "correct_top5": 7735,
+    "top1_micro": 0.046071226681741094,
+    "top5_micro": 0.21862634256642172,
+    "top1_prompt_macro": 0.04456964760122612,
+    "top5_prompt_macro": 0.21433112380618322,
+    "prompt_exact_match": 0.0,
+    "synthetic_protected_span_exact_match": 0.0,
+    "protected_span_count": 1000,
+    "token_balanced_recall": 0.05073366635656323,
+    "token_macro_f1_observed_true_classes": 0.04098638791681181,
+    "rare_token_count": 1845,
+    "rare_token_top1": 0.05257452574525745,
+    "frequent_token_top1": 0.04571343372595795,
+    "normalized_edit_distance": 0.9554303523987739,
+    "by_category": {
+      "C01": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04357973252860278
+      },
+      "C02": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04134327652731962
+      },
+      "C03": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.045217171388950296
+      },
+      "C04": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.030059642458989254
+      },
+      "C05": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0495503868578228
+      },
+      "C06": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.05070352928320358
+      },
+      "C07": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04060879643648468
+      },
+      "C08": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.05004586155333443
+      },
+      "C09": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.047915006131036025
+      },
+      "C10": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04860419128963752
+      },
+      "C11": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.03993042544127303
+      },
+      "C12": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04064959667050714
+      },
+      "C13": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04072590252521412
+      },
+      "C14": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0416577930671038
+      },
+      "C15": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.03710908240289221
+      },
+      "C16": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04918678586839968
+      },
+      "C17": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04806014448310428
+      },
+      "C18": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.060005729735899925
+      },
+      "C19": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04177107183700553
+      },
+      "C20": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04466882553774175
+      }
+    },
+    "scope": "Known input positions, synthetic signals and synthetic protected keyword spans; no physical leakage demonstrated.",
+    "condition": "fusion_learned",
+    "seed": 0
+  },
+  {
+    "positions": 35380,
+    "prompts": 1000,
+    "correct_top1": 1640,
+    "correct_top5": 7840,
+    "top1_micro": 0.046353872244205764,
+    "top5_micro": 0.22159412097230075,
+    "top1_prompt_macro": 0.04482073364666147,
+    "top5_prompt_macro": 0.2171098512980679,
+    "prompt_exact_match": 0.0,
+    "synthetic_protected_span_exact_match": 0.0,
+    "protected_span_count": 1000,
+    "token_balanced_recall": 0.05129576556539063,
+    "token_macro_f1_observed_true_classes": 0.04129097125791611,
+    "rare_token_count": 1845,
+    "rare_token_top1": 0.05257452574525745,
+    "frequent_token_top1": 0.04601162964067392,
+    "normalized_edit_distance": 0.9551792663533386,
+    "by_category": {
+      "C01": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04357973252860278
+      },
+      "C02": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04166073684477993
+      },
+      "C03": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04558080775258665
+      },
+      "C04": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.03037710277644957
+      },
+      "C05": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.05045947776691371
+      },
+      "C06": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.05070352928320358
+      },
+      "C07": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04127217362946713
+      },
+      "C08": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.05004586155333443
+      },
+      "C09": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04886738708341697
+      },
+      "C10": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04860419128963752
+      },
+      "C11": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04032258230401812
+      },
+      "C12": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04100673952765
+      },
+      "C13": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.040348544034648076
+      },
+      "C14": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0416577930671038
+      },
+      "C15": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.03710908240289221
+      },
+      "C16": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04918678586839968
+      },
+      "C17": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.048417287340247146
+      },
+      "C18": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.06077496050513069
+      },
+      "C19": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04177107183700553
+      },
+      "C20": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04466882553774175
+      }
+    },
+    "scope": "Known input positions, synthetic signals and synthetic protected keyword spans; no physical leakage demonstrated.",
+    "condition": "fusion_learned_pruned",
+    "seed": 0
+  },
+  {
+    "positions": 35380,
+    "prompts": 1000,
+    "correct_top1": 0,
+    "correct_top5": 4,
+    "top1_micro": 0.0,
+    "top5_micro": 0.00011305822498586772,
+    "top1_prompt_macro": 0.0,
+    "top5_prompt_macro": 9.640480087288597e-05,
+    "prompt_exact_match": 0.0,
+    "synthetic_protected_span_exact_match": 0.0,
+    "protected_span_count": 1000,
+    "token_balanced_recall": 0.0,
+    "token_macro_f1_observed_true_classes": 0.0,
+    "rare_token_count": 1845,
+    "rare_token_top1": 0.0,
+    "frequent_token_top1": 0.0,
+    "normalized_edit_distance": null,
+    "by_category": {
+      "C01": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C02": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C03": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C04": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C05": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C06": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C07": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C08": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C09": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C10": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C11": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C12": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C13": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C14": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C15": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C16": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C17": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C18": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C19": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C20": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      }
+    },
+    "scope": "Known input positions, synthetic signals and synthetic protected keyword spans; no physical leakage demonstrated.",
+    "condition": "constant_signals",
+    "seed": 0
+  },
+  {
+    "positions": 35380,
+    "prompts": 1000,
+    "correct_top1": 20,
+    "correct_top5": 107,
+    "top1_micro": 0.0005652911249293386,
+    "top5_micro": 0.0030243075183719616,
+    "top1_prompt_macro": 0.0005128479071589881,
+    "top5_prompt_macro": 0.0031540884311893488,
+    "prompt_exact_match": 0.0,
+    "synthetic_protected_span_exact_match": 0.0,
+    "protected_span_count": 1000,
+    "token_balanced_recall": 6.275758509503707e-05,
+    "token_macro_f1_observed_true_classes": 2.5574162167566918e-05,
+    "rare_token_count": 1845,
+    "rare_token_top1": 0.0,
+    "frequent_token_top1": 0.0005963918294319368,
+    "normalized_edit_distance": null,
+    "by_category": {
+      "C01": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.00037037037037037035
+      },
+      "C02": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0003125
+      },
+      "C03": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.000808080808080808
+      },
+      "C04": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0003125
+      },
+      "C05": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0011858974358974358
+      },
+      "C06": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0003636363636363636
+      },
+      "C07": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0003636363636363636
+      },
+      "C08": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0010918114143920596
+      },
+      "C09": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C10": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.00044444444444444447
+      },
+      "C11": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C12": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0008333333333333333
+      },
+      "C13": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C14": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0013801313628899836
+      },
+      "C15": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C16": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C17": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C18": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0009523809523809524
+      },
+      "C19": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0018382352941176473
+      },
+      "C20": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      }
+    },
+    "scope": "Known input positions, synthetic signals and synthetic protected keyword spans; no physical leakage demonstrated.",
+    "condition": "permuted_observation_pairs",
+    "seed": 0
+  },
+  {
+    "positions": 35380,
+    "prompts": 1000,
+    "correct_top1": 3049,
+    "correct_top5": 7083,
+    "top1_micro": 0.08617863199547766,
+    "top5_micro": 0.20019785189372527,
+    "top1_prompt_macro": 0.08287822187351178,
+    "top5_prompt_macro": 0.2024062055267305,
+    "prompt_exact_match": 0.0,
+    "synthetic_protected_span_exact_match": 0.002,
+    "protected_span_count": 1000,
+    "token_balanced_recall": 0.0001599488163787588,
+    "token_macro_f1_observed_true_classes": 2.538103729677252e-05,
+    "rare_token_count": 1845,
+    "rare_token_top1": 0.0,
+    "frequent_token_top1": 0.09091993439689876,
+    "normalized_edit_distance": null,
+    "by_category": {
+      "C01": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.08792933965107162
+      },
+      "C02": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.07877436744623528
+      },
+      "C03": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.10023671229441126
+      },
+      "C04": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.07651924284270901
+      },
+      "C05": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.08293735549096702
+      },
+      "C06": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.07946669867443407
+      },
+      "C07": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.07651318476410092
+      },
+      "C08": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.09497918487910967
+      },
+      "C09": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.08942756884777779
+      },
+      "C10": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.07592199690071837
+      },
+      "C11": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0810500343401382
+      },
+      "C12": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.08389209304264447
+      },
+      "C13": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.08808217691268251
+      },
+      "C14": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.08186464844694219
+      },
+      "C15": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.08612804604268036
+      },
+      "C16": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.081966743517769
+      },
+      "C17": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.07059743295307784
+      },
+      "C18": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.07703280078715063
+      },
+      "C19": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.08511889166605494
+      },
+      "C20": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.07912591796956009
+      }
+    },
+    "scope": "Known input positions, synthetic signals and synthetic protected keyword spans; no physical leakage demonstrated.",
+    "condition": "frequency_prior",
+    "seed": 1
+  },
+  {
+    "positions": 35380,
+    "prompts": 1000,
+    "correct_top1": 2,
+    "correct_top5": 20,
+    "top1_micro": 5.652911249293386e-05,
+    "top5_micro": 0.0005652911249293386,
+    "top1_prompt_macro": 3.645833333333333e-05,
+    "top5_prompt_macro": 0.0005743873429463693,
+    "prompt_exact_match": 0.0,
+    "synthetic_protected_span_exact_match": 0.0,
+    "protected_span_count": 1000,
+    "token_balanced_recall": 2.273970773286807e-06,
+    "token_macro_f1_observed_true_classes": 4.259296117215046e-06,
+    "rare_token_count": 1845,
+    "rare_token_top1": 0.0,
+    "frequent_token_top1": 5.963918294319368e-05,
+    "normalized_edit_distance": null,
+    "by_category": {
+      "C01": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C02": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0003125
+      },
+      "C03": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C04": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C05": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C06": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C07": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C08": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C09": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C10": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C11": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C12": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C13": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C14": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C15": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C16": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C17": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C18": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C19": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C20": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.00041666666666666664
+      }
+    },
+    "scope": "Known input positions, synthetic signals and synthetic protected keyword spans; no physical leakage demonstrated.",
+    "condition": "uniform_random",
+    "seed": 1
+  },
+  {
+    "positions": 35380,
+    "prompts": 1000,
+    "correct_top1": 18,
+    "correct_top5": 67,
+    "top1_micro": 0.0005087620124364047,
+    "top5_micro": 0.0018937252685132843,
+    "top1_prompt_macro": 0.0006506212566660556,
+    "top5_prompt_macro": 0.001987336758450413,
+    "prompt_exact_match": 0.0,
+    "synthetic_protected_span_exact_match": 0.0,
+    "protected_span_count": 1000,
+    "token_balanced_recall": 0.00045695914479723383,
+    "token_macro_f1_observed_true_classes": 0.000183130932356718,
+    "rare_token_count": 1845,
+    "rare_token_top1": 0.0005420054200542005,
+    "frequent_token_top1": 0.0005069330550171462,
+    "normalized_edit_distance": null,
+    "by_category": {
+      "C01": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0006666666666666666
+      },
+      "C02": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.002471590909090909
+      },
+      "C03": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0007407407407407407
+      },
+      "C04": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.001392156862745098
+      },
+      "C05": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0004651162790697674
+      },
+      "C06": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C07": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C08": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.00045454545454545455
+      },
+      "C09": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0003448275862068965
+      },
+      "C10": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C11": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C12": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0005263157894736842
+      },
+      "C13": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.003450094161958569
+      },
+      "C14": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C15": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C16": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C17": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0007692307692307692
+      },
+      "C18": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.000392156862745098
+      },
+      "C19": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C20": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0013389830508474575
+      }
+    },
+    "scope": "Known input positions, synthetic signals and synthetic protected keyword spans; no physical leakage demonstrated.",
+    "condition": "timing_only",
+    "seed": 1
+  },
+  {
+    "positions": 35380,
+    "prompts": 1000,
+    "correct_top1": 532,
+    "correct_top5": 2643,
+    "top1_micro": 0.015036743923120406,
+    "top5_micro": 0.0747032221594121,
+    "top1_prompt_macro": 0.015117703739919395,
+    "top5_prompt_macro": 0.074774124943723,
+    "prompt_exact_match": 0.0,
+    "synthetic_protected_span_exact_match": 0.0,
+    "protected_span_count": 1000,
+    "token_balanced_recall": 0.014012004375497855,
+    "token_macro_f1_observed_true_classes": 0.01114968316002769,
+    "rare_token_count": 1845,
+    "rare_token_top1": 0.011924119241192412,
+    "frequent_token_top1": 0.015207991650514388,
+    "normalized_edit_distance": null,
+    "by_category": {
+      "C01": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.016625752698739577
+      },
+      "C02": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.018697398133244704
+      },
+      "C03": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.011113330760836
+      },
+      "C04": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.01665773318789307
+      },
+      "C05": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.013848348463986198
+      },
+      "C06": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.013287116087461845
+      },
+      "C07": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.010273114355677748
+      },
+      "C08": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.018055639110597856
+      },
+      "C09": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.020399137660158967
+      },
+      "C10": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.015795232887711324
+      },
+      "C11": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.01261873986786224
+      },
+      "C12": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.018835824421484806
+      },
+      "C13": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.013579902234971228
+      },
+      "C14": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.012671673549738754
+      },
+      "C15": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.019003692840948504
+      },
+      "C16": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.01521807319742977
+      },
+      "C17": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.012121927997068925
+      },
+      "C18": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.013333016150659696
+      },
+      "C19": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.011907105753475606
+      },
+      "C20": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.018311315438441073
+      }
+    },
+    "scope": "Known input positions, synthetic signals and synthetic protected keyword spans; no physical leakage demonstrated.",
+    "condition": "cache_only",
+    "seed": 1
+  },
+  {
+    "positions": 35380,
+    "prompts": 1000,
+    "correct_top1": 1595,
+    "correct_top5": 8075,
+    "top1_micro": 0.045081967213114756,
+    "top5_micro": 0.22823629169022047,
+    "top1_prompt_macro": 0.04531092755189671,
+    "top5_prompt_macro": 0.22827172344215435,
+    "prompt_exact_match": 0.0,
+    "synthetic_protected_span_exact_match": 0.0,
+    "protected_span_count": 1000,
+    "token_balanced_recall": 0.05177089280917185,
+    "token_macro_f1_observed_true_classes": 0.03816625282107828,
+    "rare_token_count": 1845,
+    "rare_token_top1": 0.055284552845528454,
+    "frequent_token_top1": 0.04452065006709408,
+    "normalized_edit_distance": 0.9546890724481034,
+    "by_category": {
+      "C01": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.05342380599706239
+      },
+      "C02": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.053154635203112505
+      },
+      "C03": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.03931207687065876
+      },
+      "C04": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04633923638789419
+      },
+      "C05": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.045291760504400605
+      },
+      "C06": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04477299175607994
+      },
+      "C07": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04731432878128428
+      },
+      "C08": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.040602801661683764
+      },
+      "C09": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.035914064258108024
+      },
+      "C10": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.054597884920100474
+      },
+      "C11": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04338953508805195
+      },
+      "C12": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.05296882780729762
+      },
+      "C13": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04154682843680214
+      },
+      "C14": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.040930112741908546
+      },
+      "C15": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04202368129691439
+      },
+      "C16": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04355184353433713
+      },
+      "C17": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.041779574358415415
+      },
+      "C18": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.052875111381504886
+      },
+      "C19": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0451807714635143
+      },
+      "C20": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04124867858880286
+      }
+    },
+    "scope": "Known input positions, synthetic signals and synthetic protected keyword spans; no physical leakage demonstrated.",
+    "condition": "fusion_fixed",
+    "seed": 1
+  },
+  {
+    "positions": 35380,
+    "prompts": 1000,
+    "correct_top1": 1652,
+    "correct_top5": 7857,
+    "top1_micro": 0.04669304691916337,
+    "top5_micro": 0.22207461842849066,
+    "top1_prompt_macro": 0.046919292747611835,
+    "top5_prompt_macro": 0.22232585609341504,
+    "prompt_exact_match": 0.0,
+    "synthetic_protected_span_exact_match": 0.001,
+    "protected_span_count": 1000,
+    "token_balanced_recall": 0.051253004154073974,
+    "token_macro_f1_observed_true_classes": 0.041320308000630385,
+    "rare_token_count": 1845,
+    "rare_token_top1": 0.056910569105691054,
+    "frequent_token_top1": 0.04613090800656031,
+    "normalized_edit_distance": 0.9530807072523882,
+    "by_category": {
+      "C01": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.056095369376898914
+      },
+      "C02": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.05857707210746574
+      },
+      "C03": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.03868946179299733
+      },
+      "C04": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04793222214232846
+      },
+      "C05": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04570481670105859
+      },
+      "C06": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04057498941215006
+      },
+      "C07": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.05066122331312475
+      },
+      "C08": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04377424293364706
+      },
+      "C09": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04418169765900057
+      },
+      "C10": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.05126362090177605
+      },
+      "C11": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0442487925946586
+      },
+      "C12": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.05222518400348248
+      },
+      "C13": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.046688885708848306
+      },
+      "C14": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04589040708975973
+      },
+      "C15": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.049776965501178515
+      },
+      "C16": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.042190455479162246
+      },
+      "C17": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04715356209726247
+      },
+      "C18": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04657788203408431
+      },
+      "C19": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04169243932980621
+      },
+      "C20": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0444865647735462
+      }
+    },
+    "scope": "Known input positions, synthetic signals and synthetic protected keyword spans; no physical leakage demonstrated.",
+    "condition": "fusion_learned",
+    "seed": 1
+  },
+  {
+    "positions": 35380,
+    "prompts": 1000,
+    "correct_top1": 1679,
+    "correct_top5": 7960,
+    "top1_micro": 0.04745618993781798,
+    "top5_micro": 0.22498586772187676,
+    "top1_prompt_macro": 0.04766147001524736,
+    "top5_prompt_macro": 0.2252786667105089,
+    "prompt_exact_match": 0.0,
+    "synthetic_protected_span_exact_match": 0.001,
+    "protected_span_count": 1000,
+    "token_balanced_recall": 0.05214794088559531,
+    "token_macro_f1_observed_true_classes": 0.041844336706264244,
+    "rare_token_count": 1845,
+    "rare_token_top1": 0.05853658536585366,
+    "frequent_token_top1": 0.04684657820187863,
+    "normalized_edit_distance": 0.9523385299847527,
+    "by_category": {
+      "C01": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.05718756795845921
+      },
+      "C02": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.05857707210746574
+      },
+      "C03": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.03868946179299733
+      },
+      "C04": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04793222214232846
+      },
+      "C05": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.047121483367725245
+      },
+      "C06": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.040908322745483394
+      },
+      "C07": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.051916125273909056
+      },
+      "C08": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04441940422396965
+      },
+      "C09": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04715801344847426
+      },
+      "C10": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.05126362090177605
+      },
+      "C11": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0442487925946586
+      },
+      "C12": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.05222518400348248
+      },
+      "C13": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.046688885708848306
+      },
+      "C14": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.046565010264362904
+      },
+      "C15": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.050383026107239125
+      },
+      "C16": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.042625238087857904
+      },
+      "C17": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04980836912598254
+      },
+      "C18": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0473120090182113
+      },
+      "C19": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04251012810744492
+      },
+      "C20": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.04568946332427084
+      }
+    },
+    "scope": "Known input positions, synthetic signals and synthetic protected keyword spans; no physical leakage demonstrated.",
+    "condition": "fusion_learned_pruned",
+    "seed": 1
+  },
+  {
+    "positions": 35380,
+    "prompts": 1000,
+    "correct_top1": 1,
+    "correct_top5": 7,
+    "top1_micro": 2.826455624646693e-05,
+    "top5_micro": 0.00019785189372526851,
+    "top1_prompt_macro": 2.1276595744680852e-05,
+    "top5_prompt_macro": 0.00017325370171155662,
+    "prompt_exact_match": 0.0,
+    "synthetic_protected_span_exact_match": 0.0,
+    "protected_span_count": 1000,
+    "token_balanced_recall": 0.0001599488163787588,
+    "token_macro_f1_observed_true_classes": 9.041509079944534e-09,
+    "rare_token_count": 1845,
+    "rare_token_top1": 0.0005420054200542005,
+    "frequent_token_top1": 0.0,
+    "normalized_edit_distance": null,
+    "by_category": {
+      "C01": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C02": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C03": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C04": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C05": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C06": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C07": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C08": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C09": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C10": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C11": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C12": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C13": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C14": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C15": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C16": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C17": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C18": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.000425531914893617
+      },
+      "C19": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C20": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      }
+    },
+    "scope": "Known input positions, synthetic signals and synthetic protected keyword spans; no physical leakage demonstrated.",
+    "condition": "constant_signals",
+    "seed": 1
+  },
+  {
+    "positions": 35380,
+    "prompts": 1000,
+    "correct_top1": 12,
+    "correct_top5": 103,
+    "top1_micro": 0.0003391746749576032,
+    "top5_micro": 0.002911249293386094,
+    "top1_prompt_macro": 0.00036767663033383113,
+    "top5_prompt_macro": 0.0026723921407629863,
+    "prompt_exact_match": 0.0,
+    "synthetic_protected_span_exact_match": 0.0,
+    "protected_span_count": 1000,
+    "token_balanced_recall": 4.273964624469455e-05,
+    "token_macro_f1_observed_true_classes": 1.6015052921302088e-05,
+    "rare_token_count": 1845,
+    "rare_token_top1": 0.0,
+    "frequent_token_top1": 0.0003578350976591621,
+    "normalized_edit_distance": null,
+    "by_category": {
+      "C01": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C02": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0005555555555555556
+      },
+      "C03": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0008333333333333333
+      },
+      "C04": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C05": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.00041666666666666664
+      },
+      "C06": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C07": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C08": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C09": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C10": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0011587301587301588
+      },
+      "C11": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.001176470588235294
+      },
+      "C12": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C13": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C14": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0003333333333333333
+      },
+      "C15": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0003448275862068965
+      },
+      "C16": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0017333333333333335
+      },
+      "C17": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C18": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.00041666666666666664
+      },
+      "C19": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0
+      },
+      "C20": {
+        "prompts": 50,
+        "top1_prompt_macro": 0.0003846153846153846
+      }
+    },
+    "scope": "Known input positions, synthetic signals and synthetic protected keyword spans; no physical leakage demonstrated.",
+    "condition": "permuted_observation_pairs",
+    "seed": 1
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "python": "3.11.9",
+  "machine": "x86_64",
+  "processor": "",
+  "torch_threads": 2,
+  "clock": "namespace(implementation='clock_gettime(CLOCK_MONOTONIC)', monotonic=True, adjustable=False, resolution=1e-09)",
+  "transport": "loopback TCP; TCP_NODELAY; padded requests and fixed-size response markers",
+  "server_features_available_to_attacker": false,
+  "input_output_alignment": "aggregate response predicts one candidate input token at a public fixed position"
+}

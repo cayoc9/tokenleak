@@ -1,0 +1,498 @@
+{
+  "mode": "measured_model_inference_loopback",
+  "model_id": "openai-community/gpt2",
+  "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+  "physical_cache_measured": false,
+  "complete_prompt_reconstruction_evaluated": false,
+  "primary_partition": "new_session_new_context",
+  "primary_condition": "gpt2",
+  "observations": 2304,
+  "features": [
+    "request_to_first_marker_ms",
+    "request_to_last_marker_ms",
+    "mean_marker_gap_ms",
+    "std_marker_gap_ms",
+    "body_reads",
+    "max_markers_per_read"
+  ],
+  "conditions": {
+    "gpt2": {
+      "validation_known_context": {
+        "requests": 128,
+        "correct_top1": 21,
+        "top1": 0.1640625,
+        "top5": 0.609375,
+        "balanced_accuracy": 0.1640625,
+        "macro_f1": 0.142316281341636,
+        "log_loss": 2.098152708366835,
+        "support": {
+          "C03": 16,
+          "C06": 16,
+          "C05": 16,
+          "C04": 16,
+          "C07": 16,
+          "C00": 16,
+          "C02": 16,
+          "C01": 16
+        },
+        "cluster_bootstrap_ci95": [
+          0.1015625,
+          0.234375
+        ],
+        "cluster_unit": "balanced repetition block; fixed candidates, contexts, machine and sessions",
+        "bootstrap_groups": 8,
+        "randomizations": 2000,
+        "conditional_permutation_p_one_sided": 0.09245377311344327,
+        "permutation_null_mean": 0.125390625,
+        "permutation_null_ci95": [
+          0.078125,
+          0.171875
+        ],
+        "permutation_unit": "labels shuffled within context x repetition, classifier fixed",
+        "frequency_prior_top1": 0.125,
+        "uniform_top1_expectation": 0.125,
+        "uniform_top5_expectation": 0.625,
+        "scope": "one input-token identity among eight public candidates; fixed public slot; response timing only"
+      },
+      "same_session_new_context": {
+        "requests": 128,
+        "correct_top1": 13,
+        "top1": 0.1015625,
+        "top5": 0.6328125,
+        "balanced_accuracy": 0.1015625,
+        "macro_f1": 0.08376560604222782,
+        "log_loss": 2.1357258076693713,
+        "support": {
+          "C04": 16,
+          "C06": 16,
+          "C01": 16,
+          "C07": 16,
+          "C05": 16,
+          "C03": 16,
+          "C02": 16,
+          "C00": 16
+        },
+        "cluster_bootstrap_ci95": [
+          0.0546875,
+          0.1484375
+        ],
+        "cluster_unit": "balanced repetition block; fixed candidates, contexts, machine and sessions",
+        "bootstrap_groups": 8,
+        "randomizations": 2000,
+        "conditional_permutation_p_one_sided": 0.8680659670164917,
+        "permutation_null_mean": 0.12491015625,
+        "permutation_null_ci95": [
+          0.078125,
+          0.171875
+        ],
+        "permutation_unit": "labels shuffled within context x repetition, classifier fixed",
+        "frequency_prior_top1": 0.125,
+        "uniform_top1_expectation": 0.125,
+        "uniform_top5_expectation": 0.625,
+        "scope": "one input-token identity among eight public candidates; fixed public slot; response timing only"
+      },
+      "new_session_known_context": {
+        "requests": 128,
+        "correct_top1": 13,
+        "top1": 0.1015625,
+        "top5": 0.71875,
+        "balanced_accuracy": 0.1015625,
+        "macro_f1": 0.07178932178932179,
+        "log_loss": 2.0835058246189537,
+        "support": {
+          "C00": 16,
+          "C03": 16,
+          "C07": 16,
+          "C01": 16,
+          "C05": 16,
+          "C02": 16,
+          "C04": 16,
+          "C06": 16
+        },
+        "cluster_bootstrap_ci95": [
+          0.078125,
+          0.125
+        ],
+        "cluster_unit": "balanced repetition block; fixed candidates, contexts, machine and sessions",
+        "bootstrap_groups": 8,
+        "randomizations": 2000,
+        "conditional_permutation_p_one_sided": 0.872063968015992,
+        "permutation_null_mean": 0.125359375,
+        "permutation_null_ci95": [
+          0.078125,
+          0.171875
+        ],
+        "permutation_unit": "labels shuffled within context x repetition, classifier fixed",
+        "frequency_prior_top1": 0.125,
+        "uniform_top1_expectation": 0.125,
+        "uniform_top5_expectation": 0.625,
+        "scope": "one input-token identity among eight public candidates; fixed public slot; response timing only"
+      },
+      "new_session_new_context": {
+        "requests": 128,
+        "correct_top1": 13,
+        "top1": 0.1015625,
+        "top5": 0.640625,
+        "balanced_accuracy": 0.1015625,
+        "macro_f1": 0.05767628127178688,
+        "log_loss": 2.1005146119857026,
+        "support": {
+          "C06": 16,
+          "C02": 16,
+          "C05": 16,
+          "C04": 16,
+          "C01": 16,
+          "C00": 16,
+          "C07": 16,
+          "C03": 16
+        },
+        "cluster_bootstrap_ci95": [
+          0.0703125,
+          0.1484375
+        ],
+        "cluster_unit": "balanced repetition block; fixed candidates, contexts, machine and sessions",
+        "bootstrap_groups": 8,
+        "randomizations": 2000,
+        "conditional_permutation_p_one_sided": 0.8775612193903048,
+        "permutation_null_mean": 0.126125,
+        "permutation_null_ci95": [
+          0.078125,
+          0.17207031249999893
+        ],
+        "permutation_unit": "labels shuffled within context x repetition, classifier fixed",
+        "frequency_prior_top1": 0.125,
+        "uniform_top1_expectation": 0.125,
+        "uniform_top5_expectation": 0.625,
+        "scope": "one input-token identity among eight public candidates; fixed public slot; response timing only"
+      }
+    },
+    "gpt2_input_blinded": {
+      "validation_known_context": {
+        "requests": 128,
+        "correct_top1": 15,
+        "top1": 0.1171875,
+        "top5": 0.5625,
+        "balanced_accuracy": 0.1171875,
+        "macro_f1": 0.09446108513539841,
+        "log_loss": 2.2972637846169612,
+        "support": {
+          "C03": 16,
+          "C06": 16,
+          "C05": 16,
+          "C04": 16,
+          "C07": 16,
+          "C00": 16,
+          "C02": 16,
+          "C01": 16
+        },
+        "cluster_bootstrap_ci95": [
+          0.0703125,
+          0.1796875
+        ],
+        "cluster_unit": "balanced repetition block; fixed candidates, contexts, machine and sessions",
+        "bootstrap_groups": 8,
+        "randomizations": 2000,
+        "conditional_permutation_p_one_sided": 0.6421789105447276,
+        "permutation_null_mean": 0.12457421875,
+        "permutation_null_ci95": [
+          0.0703125,
+          0.1796875
+        ],
+        "permutation_unit": "labels shuffled within context x repetition, classifier fixed",
+        "frequency_prior_top1": 0.125,
+        "uniform_top1_expectation": 0.125,
+        "uniform_top5_expectation": 0.625,
+        "scope": "one input-token identity among eight public candidates; fixed public slot; response timing only"
+      },
+      "same_session_new_context": {
+        "requests": 128,
+        "correct_top1": 11,
+        "top1": 0.0859375,
+        "top5": 0.5859375,
+        "balanced_accuracy": 0.0859375,
+        "macro_f1": 0.07247471523959151,
+        "log_loss": 2.178386308871797,
+        "support": {
+          "C04": 16,
+          "C06": 16,
+          "C01": 16,
+          "C07": 16,
+          "C05": 16,
+          "C03": 16,
+          "C02": 16,
+          "C00": 16
+        },
+        "cluster_bootstrap_ci95": [
+          0.046875,
+          0.125
+        ],
+        "cluster_unit": "balanced repetition block; fixed candidates, contexts, machine and sessions",
+        "bootstrap_groups": 8,
+        "randomizations": 2000,
+        "conditional_permutation_p_one_sided": 0.9485257371314343,
+        "permutation_null_mean": 0.125484375,
+        "permutation_null_ci95": [
+          0.078125,
+          0.1796875
+        ],
+        "permutation_unit": "labels shuffled within context x repetition, classifier fixed",
+        "frequency_prior_top1": 0.125,
+        "uniform_top1_expectation": 0.125,
+        "uniform_top5_expectation": 0.625,
+        "scope": "one input-token identity among eight public candidates; fixed public slot; response timing only"
+      },
+      "new_session_known_context": {
+        "requests": 128,
+        "correct_top1": 14,
+        "top1": 0.109375,
+        "top5": 0.578125,
+        "balanced_accuracy": 0.109375,
+        "macro_f1": 0.08575269649326897,
+        "log_loss": 2.087864047864987,
+        "support": {
+          "C00": 16,
+          "C03": 16,
+          "C07": 16,
+          "C01": 16,
+          "C05": 16,
+          "C02": 16,
+          "C04": 16,
+          "C06": 16
+        },
+        "cluster_bootstrap_ci95": [
+          0.078125,
+          0.1484375
+        ],
+        "cluster_unit": "balanced repetition block; fixed candidates, contexts, machine and sessions",
+        "bootstrap_groups": 8,
+        "randomizations": 2000,
+        "conditional_permutation_p_one_sided": 0.7571214392803598,
+        "permutation_null_mean": 0.12458984375,
+        "permutation_null_ci95": [
+          0.078125,
+          0.1796875
+        ],
+        "permutation_unit": "labels shuffled within context x repetition, classifier fixed",
+        "frequency_prior_top1": 0.125,
+        "uniform_top1_expectation": 0.125,
+        "uniform_top5_expectation": 0.625,
+        "scope": "one input-token identity among eight public candidates; fixed public slot; response timing only"
+      },
+      "new_session_new_context": {
+        "requests": 128,
+        "correct_top1": 12,
+        "top1": 0.09375,
+        "top5": 0.6640625,
+        "balanced_accuracy": 0.09375,
+        "macro_f1": 0.07586307012852184,
+        "log_loss": 2.1277193557905907,
+        "support": {
+          "C06": 16,
+          "C02": 16,
+          "C05": 16,
+          "C04": 16,
+          "C01": 16,
+          "C00": 16,
+          "C07": 16,
+          "C03": 16
+        },
+        "cluster_bootstrap_ci95": [
+          0.0546875,
+          0.140625
+        ],
+        "cluster_unit": "balanced repetition block; fixed candidates, contexts, machine and sessions",
+        "bootstrap_groups": 8,
+        "randomizations": 2000,
+        "conditional_permutation_p_one_sided": 0.9070464767616192,
+        "permutation_null_mean": 0.12550390625,
+        "permutation_null_ci95": [
+          0.0703125,
+          0.17988281249999893
+        ],
+        "permutation_unit": "labels shuffled within context x repetition, classifier fixed",
+        "frequency_prior_top1": 0.125,
+        "uniform_top1_expectation": 0.125,
+        "uniform_top5_expectation": 0.625,
+        "scope": "one input-token identity among eight public candidates; fixed public slot; response timing only"
+      }
+    },
+    "constant": {
+      "validation_known_context": {
+        "requests": 128,
+        "correct_top1": 17,
+        "top1": 0.1328125,
+        "top5": 0.640625,
+        "balanced_accuracy": 0.1328125,
+        "macro_f1": 0.11322115384615385,
+        "log_loss": 2.3081362238934893,
+        "support": {
+          "C03": 16,
+          "C06": 16,
+          "C05": 16,
+          "C04": 16,
+          "C07": 16,
+          "C00": 16,
+          "C02": 16,
+          "C01": 16
+        },
+        "cluster_bootstrap_ci95": [
+          0.09375,
+          0.171875
+        ],
+        "cluster_unit": "balanced repetition block; fixed candidates, contexts, machine and sessions",
+        "bootstrap_groups": 8,
+        "randomizations": 2000,
+        "conditional_permutation_p_one_sided": 0.4397801099450275,
+        "permutation_null_mean": 0.12503515625,
+        "permutation_null_ci95": [
+          0.078125,
+          0.1796875
+        ],
+        "permutation_unit": "labels shuffled within context x repetition, classifier fixed",
+        "frequency_prior_top1": 0.125,
+        "uniform_top1_expectation": 0.125,
+        "uniform_top5_expectation": 0.625,
+        "scope": "one input-token identity among eight public candidates; fixed public slot; response timing only"
+      },
+      "same_session_new_context": {
+        "requests": 128,
+        "correct_top1": 15,
+        "top1": 0.1171875,
+        "top5": 0.640625,
+        "balanced_accuracy": 0.1171875,
+        "macro_f1": 0.08694577696125683,
+        "log_loss": 2.267126521952437,
+        "support": {
+          "C04": 16,
+          "C06": 16,
+          "C01": 16,
+          "C07": 16,
+          "C05": 16,
+          "C03": 16,
+          "C02": 16,
+          "C00": 16
+        },
+        "cluster_bootstrap_ci95": [
+          0.078125,
+          0.1640625
+        ],
+        "cluster_unit": "balanced repetition block; fixed candidates, contexts, machine and sessions",
+        "bootstrap_groups": 8,
+        "randomizations": 2000,
+        "conditional_permutation_p_one_sided": 0.6836581709145427,
+        "permutation_null_mean": 0.1258125,
+        "permutation_null_ci95": [
+          0.078125,
+          0.1796875
+        ],
+        "permutation_unit": "labels shuffled within context x repetition, classifier fixed",
+        "frequency_prior_top1": 0.125,
+        "uniform_top1_expectation": 0.125,
+        "uniform_top5_expectation": 0.625,
+        "scope": "one input-token identity among eight public candidates; fixed public slot; response timing only"
+      },
+      "new_session_known_context": {
+        "requests": 128,
+        "correct_top1": 15,
+        "top1": 0.1171875,
+        "top5": 0.6640625,
+        "balanced_accuracy": 0.1171875,
+        "macro_f1": 0.10451781884177527,
+        "log_loss": 2.152738413048854,
+        "support": {
+          "C00": 16,
+          "C03": 16,
+          "C07": 16,
+          "C01": 16,
+          "C05": 16,
+          "C02": 16,
+          "C04": 16,
+          "C06": 16
+        },
+        "cluster_bootstrap_ci95": [
+          0.09375,
+          0.140625
+        ],
+        "cluster_unit": "balanced repetition block; fixed candidates, contexts, machine and sessions",
+        "bootstrap_groups": 8,
+        "randomizations": 2000,
+        "conditional_permutation_p_one_sided": 0.6561719140429785,
+        "permutation_null_mean": 0.1246640625,
+        "permutation_null_ci95": [
+          0.0703125,
+          0.1796875
+        ],
+        "permutation_unit": "labels shuffled within context x repetition, classifier fixed",
+        "frequency_prior_top1": 0.125,
+        "uniform_top1_expectation": 0.125,
+        "uniform_top5_expectation": 0.625,
+        "scope": "one input-token identity among eight public candidates; fixed public slot; response timing only"
+      },
+      "new_session_new_context": {
+        "requests": 128,
+        "correct_top1": 17,
+        "top1": 0.1328125,
+        "top5": 0.6328125,
+        "balanced_accuracy": 0.1328125,
+        "macro_f1": 0.12488836844575335,
+        "log_loss": 2.4406223298902665,
+        "support": {
+          "C06": 16,
+          "C02": 16,
+          "C05": 16,
+          "C04": 16,
+          "C01": 16,
+          "C00": 16,
+          "C07": 16,
+          "C03": 16
+        },
+        "cluster_bootstrap_ci95": [
+          0.0703125,
+          0.2109375
+        ],
+        "cluster_unit": "balanced repetition block; fixed candidates, contexts, machine and sessions",
+        "bootstrap_groups": 8,
+        "randomizations": 2000,
+        "conditional_permutation_p_one_sided": 0.4192903548225887,
+        "permutation_null_mean": 0.124296875,
+        "permutation_null_ci95": [
+          0.0703125,
+          0.1796875
+        ],
+        "permutation_unit": "labels shuffled within context x repetition, classifier fixed",
+        "frequency_prior_top1": 0.125,
+        "uniform_top1_expectation": 0.125,
+        "uniform_top5_expectation": 0.625,
+        "scope": "one input-token identity among eight public candidates; fixed public slot; response timing only"
+      }
+    }
+  },
+  "privileged_diagnostics": {
+    "gpt2": {
+      "evaluation_requests": 768,
+      "warmup_requests": 60,
+      "privileged_not_used_as_features": true,
+      "prefill_and_argmax_ms_median": 53.705875,
+      "decode_and_argmax_ms_median": 26.607365
+    },
+    "gpt2_input_blinded": {
+      "evaluation_requests": 768,
+      "warmup_requests": 60,
+      "privileged_not_used_as_features": true,
+      "prefill_and_argmax_ms_median": 53.705909,
+      "decode_and_argmax_ms_median": 26.404552
+    },
+    "constant": {
+      "evaluation_requests": 768,
+      "warmup_requests": 60,
+      "privileged_not_used_as_features": true
+    }
+  },
+  "limits": [
+    "GPT-2 small CPU feasibility pilot, not GPT-2 XL or the historical SPC-5K experiment.",
+    "Laboratory emits fixed-size token markers; not a production streaming endpoint.",
+    "Client timing excludes connection setup; includes request send, service and response transport.",
+    "Small fixed candidate set and public secret slot; no general prompt-position recovery.",
+    "Conditional block uncertainty; no inference about other machines or real private fields."
+  ]
+}

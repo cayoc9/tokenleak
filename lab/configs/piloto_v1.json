@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "experiment_name": "SPC5K-reconstruido-v1",
+  "mode": "fully_simulated",
+  "alignment": "oracle_input_positions",
+  "claim": "Classificacao de tokens com sinais sinteticos e posicoes conhecidas; nao demonstra recuperacao fisica de prompts.",
+  "dataset": {
+    "n_prompts": 200,
+    "unique_token_types": 512,
+    "min_tokens": 8,
+    "max_tokens": 64,
+    "frequent_type_fraction": 0.62,
+    "frequent_min_count": 10,
+    "zipf_exponent": 1.1,
+    "vocabulary_seed": 42001,
+    "generation_seed": 42002,
+    "frequency_seed": 42003,
+    "split_seed": 42,
+    "language": "en",
+    "method": "controlled_keyword_prompts_from_CMUdict",
+    "tokenizer_revision": "15ea56dee5df4983c59b2538573817e1667135e2",
+    "tokenizer_directory": "lab/assets/tokenizer/gpt2-xl"
+  },
+  "signals": {
+    "latent_seed": 42,
+    "timing_mean_min_ms": 5.0,
+    "timing_mean_max_ms": 15.0,
+    "timing_intrinsic_sigma_ms": 1.5,
+    "external_noise_ms": 0.0,
+    "cache_width": 256,
+    "cache_hit_probability": 0.9,
+    "cache_false_positive_probability": 0.05,
+    "cache_fingerprint_groups": null,
+    "profile_samples_per_type": 50,
+    "profiling_policy": "controlled_known_token_requests_for_every_public_vocabulary_type"
+  },
+  "trcs": {
+    "fixed_weights": [
+      0.55,
+      0.45
+    ],
+    "training_positions": 512,
+    "validation_positions": 256,
+    "uniform_negatives_per_position": 8,
+    "hard_timing_negatives_per_position": 4,
+    "nonnegative_logistic_l2": 0.001,
+    "prune_sigma": 3.0,
+    "top_k": 5
+  },
+  "evaluation": {
+    "round_seeds": [
+      0,
+      1
+    ],
+    "batch_size": 128,
+    "confidence_level": 0.95,
+    "interval_unit": "Student-t over measurement seeds conditional on fixed corpus and latent channel",
+    "primary_metric": "token_micro_accuracy",
+    "tie_break": "ascending_public_token_id",
+    "paper_reference_top1_percent": 73.4,
+    "paper_reference_top5_percent": 91.2,
+    "comparison_does_not_select_parameters": true
+  }
+}

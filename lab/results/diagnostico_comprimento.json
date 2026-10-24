@@ -1,0 +1,182 @@
+{
+  "frequency_prior": {
+    "8-16": {
+      "prompts_per_seed": 144,
+      "mean_prompt_accuracy": 0.06407322422947423,
+      "prompt_exact_match": 0,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    },
+    "17-32": {
+      "prompts_per_seed": 306,
+      "mean_prompt_accuracy": 0.0809453680333824,
+      "prompt_exact_match": 0,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    },
+    "33-64": {
+      "prompts_per_seed": 550,
+      "mean_prompt_accuracy": 0.08887708175682266,
+      "prompt_exact_match": 0,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    }
+  },
+  "uniform_random": {
+    "8-16": {
+      "prompts_per_seed": 144,
+      "mean_prompt_accuracy": 4.96031746031746e-05,
+      "prompt_exact_match": 0,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    },
+    "17-32": {
+      "prompts_per_seed": 306,
+      "mean_prompt_accuracy": 0.0001274698748687877,
+      "prompt_exact_match": 0,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    },
+    "33-64": {
+      "prompts_per_seed": 550,
+      "mean_prompt_accuracy": 7.104319888429821e-05,
+      "prompt_exact_match": 0,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    }
+  },
+  "timing_only": {
+    "8-16": {
+      "prompts_per_seed": 144,
+      "mean_prompt_accuracy": 0.0005173886684303351,
+      "prompt_exact_match": 0,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    },
+    "17-32": {
+      "prompts_per_seed": 306,
+      "mean_prompt_accuracy": 0.0004366530202907978,
+      "prompt_exact_match": 0,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    },
+    "33-64": {
+      "prompts_per_seed": 550,
+      "mean_prompt_accuracy": 0.00034632794044991516,
+      "prompt_exact_match": 0,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    }
+  },
+  "cache_only": {
+    "8-16": {
+      "prompts_per_seed": 144,
+      "mean_prompt_accuracy": 0.9954519833946918,
+      "prompt_exact_match": 0.9472222222222222,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    },
+    "17-32": {
+      "prompts_per_seed": 306,
+      "mean_prompt_accuracy": 0.9945399430719696,
+      "prompt_exact_match": 0.8764705882352941,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    },
+    "33-64": {
+      "prompts_per_seed": 550,
+      "mean_prompt_accuracy": 0.9947521612008267,
+      "prompt_exact_match": 0.7765454545454545,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    }
+  },
+  "fusion_fixed": {
+    "8-16": {
+      "prompts_per_seed": 144,
+      "mean_prompt_accuracy": 0.5648021837344754,
+      "prompt_exact_match": 0.001388888888888889,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    },
+    "17-32": {
+      "prompts_per_seed": 306,
+      "mean_prompt_accuracy": 0.560684907790385,
+      "prompt_exact_match": 0,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    },
+    "33-64": {
+      "prompts_per_seed": 550,
+      "mean_prompt_accuracy": 0.5593562253600274,
+      "prompt_exact_match": 0,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    }
+  },
+  "fusion_learned": {
+    "8-16": {
+      "prompts_per_seed": 144,
+      "mean_prompt_accuracy": 0.996409421018796,
+      "prompt_exact_match": 0.9590277777777778,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    },
+    "17-32": {
+      "prompts_per_seed": 306,
+      "mean_prompt_accuracy": 0.9956138619653104,
+      "prompt_exact_match": 0.9006535947712418,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    },
+    "33-64": {
+      "prompts_per_seed": 550,
+      "mean_prompt_accuracy": 0.9957524605492389,
+      "prompt_exact_match": 0.8170909090909091,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    }
+  },
+  "fusion_learned_pruned": {
+    "8-16": {
+      "prompts_per_seed": 144,
+      "mean_prompt_accuracy": 0.9919789893748228,
+      "prompt_exact_match": 0.9104166666666667,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    },
+    "17-32": {
+      "prompts_per_seed": 306,
+      "mean_prompt_accuracy": 0.99178129775971,
+      "prompt_exact_match": 0.8212418300653594,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    },
+    "33-64": {
+      "prompts_per_seed": 550,
+      "mean_prompt_accuracy": 0.9918743531352124,
+      "prompt_exact_match": 0.6809090909090909,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    }
+  },
+  "constant_signals": {
+    "8-16": {
+      "prompts_per_seed": 144,
+      "mean_prompt_accuracy": 0.0,
+      "prompt_exact_match": 0,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    },
+    "17-32": {
+      "prompts_per_seed": 306,
+      "mean_prompt_accuracy": 0.000105196959920398,
+      "prompt_exact_match": 0,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    },
+    "33-64": {
+      "prompts_per_seed": 550,
+      "mean_prompt_accuracy": 5.175959388243573e-05,
+      "prompt_exact_match": 0,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    }
+  },
+  "permuted_observation_pairs": {
+    "8-16": {
+      "prompts_per_seed": 144,
+      "mean_prompt_accuracy": 0.012178029339487672,
+      "prompt_exact_match": 0,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    },
+    "17-32": {
+      "prompts_per_seed": 306,
+      "mean_prompt_accuracy": 0.01284616843618848,
+      "prompt_exact_match": 0,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    },
+    "33-64": {
+      "prompts_per_seed": 550,
+      "mean_prompt_accuracy": 0.012526327899878061,
+      "prompt_exact_match": 0,
+      "interpretation": "Descriptive post-run stratification; repeated fixed prompts across ten seeds, not independent new samples"
+    }
+  }
+}

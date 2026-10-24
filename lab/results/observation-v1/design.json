@@ -1,0 +1,99 @@
+{
+  "candidates": [
+    {
+      "class_id": "C00",
+      "word": "apple",
+      "token_id": 17180
+    },
+    {
+      "class_id": "C01",
+      "word": "bridge",
+      "token_id": 7696
+    },
+    {
+      "class_id": "C02",
+      "word": "candle",
+      "token_id": 26839
+    },
+    {
+      "class_id": "C03",
+      "word": "doctor",
+      "token_id": 6253
+    },
+    {
+      "class_id": "C04",
+      "word": "forest",
+      "token_id": 8222
+    },
+    {
+      "class_id": "C05",
+      "word": "garden",
+      "token_id": 11376
+    },
+    {
+      "class_id": "C06",
+      "word": "music",
+      "token_id": 2647
+    },
+    {
+      "class_id": "C07",
+      "word": "river",
+      "token_id": 7850
+    }
+  ],
+  "contexts": [
+    {
+      "context_id": "X00",
+      "prefix_token_ids": [
+        5492,
+        4727,
+        428,
+        1790,
+        290,
+        2829,
+        1672,
+        25
+      ]
+    },
+    {
+      "context_id": "X01",
+      "prefix_token_ids": [
+        8888,
+        356,
+        2423,
+        257,
+        4506,
+        3594,
+        2643,
+        25
+      ]
+    },
+    {
+      "context_id": "X02",
+      "prefix_token_ids": [
+        3844,
+        2074,
+        428,
+        1171,
+        6291,
+        329,
+        674,
+        2050
+      ]
+    },
+    {
+      "context_id": "X03",
+      "prefix_token_ids": [
+        1135,
+        460,
+        2112,
+        262,
+        1708,
+        1790,
+        6827,
+        25
+      ]
+    }
+  ],
+  "randomization": "balanced context x candidate block per repetition; opaque UUID4 request IDs"
+}

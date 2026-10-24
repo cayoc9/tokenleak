@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "experiment": "M5-loopback-gpt2-small-v1",
+  "mode": "measured_model_inference_loopback",
+  "model_id": "openai-community/gpt2",
+  "model_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+  "device": "cpu",
+  "dtype": "float32",
+  "torch_threads": 2,
+  "model_seed": 42,
+  "input_length": 16,
+  "secret_position": 8,
+  "output_steps": 8,
+  "request_body_bytes": 2048,
+  "candidate_words": [
+    "apple",
+    "bridge",
+    "candle",
+    "doctor",
+    "forest",
+    "garden",
+    "music",
+    "river"
+  ],
+  "context_prefixes": [
+    "Please explain this short and simple example: the words are public",
+    "Today we review a brief English statement: the words are public",
+    "Now consider this public sample for our study: the words are public",
+    "We can discuss the following short sentence: the words are public"
+  ],
+  "suffix": " is a word in this public example",
+  "sessions": 3,
+  "repetitions": 8,
+  "warmup_requests": 20,
+  "conditions": [
+    "gpt2",
+    "gpt2_input_blinded",
+    "constant"
+  ],
+  "design_seed": 20261023,
+  "analysis_seed": 9137,
+  "resamples": 2000,
+  "target": "identity of a single input token among eight known candidates at a public fixed position",
+  "model_outputs": "greedy autoregressive; one fixed-size marker per output step; token values excluded from observer",
+  "transport": "loopback TCP; request padded to fixed bytes; TCP_NODELAY; chunk grouping preserved",
+  "input_output_alignment": "response-level classification; no assignment of output steps to input positions",
+  "fit": "session0 contexts X00/X01; fixed C=1 standard-scaled multinomial logistic regression",
+  "validation": "session1 contexts X00/X01, diagnostic only",
+  "primary_test": "session2 contexts X02/X03",
+  "no_hyperparameters_selected_on_test": true,
+  "scope": "CPU feasibility experiment; not original GPT-2 XL, full prompt reconstruction, cache probe or WAN/TLS observation"
+}

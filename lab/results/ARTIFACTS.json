@@ -1,0 +1,10 @@
+{
+  "release_tag": "lab-v1.0.0-20261023",
+  "release_url": "https://github.com/cayoc9/tokenleak/releases/tag/lab-v1.0.0-20261023",
+  "asset": "tokenleak-lab-v1-evidence.tar.gz",
+  "bytes": 243591710,
+  "sha256": "091dd515fa308b07a3526b6bfdbd70926bde876a65b7450d356c002b78dff844",
+  "files": 597,
+  "scope": "Upstream replay, independent simulation/collision sensitivity, measured CPU pilot and frozen scientific sources; no model weights or private archive",
+  "model_weights": "Fetch pinned public safetensors with lab/download_model.py"
+}

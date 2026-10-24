@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "observation_rows_checked": 2304,
+  "prediction_rows_checked": 1536,
+  "training_only_refits_checked": 3,
+  "fixed_payload_sizes_checked": true,
+  "only_secret_slot_varies_within_context": true,
+  "chunk_marker_lineage_checked": true,
+  "features_recomputed_without_importing_evaluator": true,
+  "conditions": {
+    "gpt2": {
+      "requests": 768,
+      "train_requests": 128,
+      "requests_with_coalesced_markers": 0,
+      "median_first_marker_ms": 54.0552505,
+      "median_last_marker_ms": 247.4314125,
+      "max_markers_per_socket_read": 1
+    },
+    "gpt2_input_blinded": {
+      "requests": 768,
+      "train_requests": 128,
+      "requests_with_coalesced_markers": 0,
+      "median_first_marker_ms": 54.021384,
+      "median_last_marker_ms": 245.364569,
+      "max_markers_per_socket_read": 1
+    },
+    "constant": {
+      "requests": 768,
+      "train_requests": 128,
+      "requests_with_coalesced_markers": 92,
+      "median_first_marker_ms": 0.142735,
+      "median_last_marker_ms": 0.2163605,
+      "max_markers_per_socket_read": 8
+    }
+  },
+  "scope": "Software/data audit of a controlled inference pilot; not proof of a deployable side-channel attack"
+}

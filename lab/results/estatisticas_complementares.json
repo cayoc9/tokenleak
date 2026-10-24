@@ -1,0 +1,10 @@
+{
+  "types_in_training_text": 7834,
+  "types_in_test_text": 6252,
+  "test_types_absent_from_training_text": 339,
+  "unprofiled_test_types": 0,
+  "reason_all_profiled": "Controlled known-token requests for all 8431 types, additional to corpus",
+  "mean_candidate_recall": 0.9957885811192764,
+  "mean_candidate_count": 5905.582230073488,
+  "total_fallback": 1
+}

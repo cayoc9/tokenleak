@@ -1,0 +1,37 @@
+{
+  "model_id": "openai-community/gpt2-xl",
+  "revision": "15ea56dee5df4983c59b2538573817e1667135e2",
+  "purpose": "Tokenizer reference only; weights are not included",
+  "files": [
+    {
+      "path": "lab/assets/tokenizer/gpt2-xl/config.json",
+      "url": "https://huggingface.co/openai-community/gpt2-xl/resolve/15ea56dee5df4983c59b2538573817e1667135e2/config.json",
+      "bytes": 689,
+      "sha256": "be48115d52314bc27327e160bf10197760db02ea689d10adb24db4102edf7a8a"
+    },
+    {
+      "path": "lab/assets/tokenizer/gpt2-xl/tokenizer.json",
+      "url": "https://huggingface.co/openai-community/gpt2-xl/resolve/15ea56dee5df4983c59b2538573817e1667135e2/tokenizer.json",
+      "bytes": 1355256,
+      "sha256": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6"
+    },
+    {
+      "path": "lab/assets/tokenizer/gpt2-xl/tokenizer_config.json",
+      "url": "https://huggingface.co/openai-community/gpt2-xl/resolve/15ea56dee5df4983c59b2538573817e1667135e2/tokenizer_config.json",
+      "bytes": 26,
+      "sha256": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f"
+    },
+    {
+      "path": "lab/assets/tokenizer/gpt2-xl/vocab.json",
+      "url": "https://huggingface.co/openai-community/gpt2-xl/resolve/15ea56dee5df4983c59b2538573817e1667135e2/vocab.json",
+      "bytes": 1042301,
+      "sha256": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783"
+    },
+    {
+      "path": "lab/assets/tokenizer/gpt2-xl/merges.txt",
+      "url": "https://huggingface.co/openai-community/gpt2-xl/resolve/15ea56dee5df4983c59b2538573817e1667135e2/merges.txt",
+      "bytes": 456318,
+      "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5"
+    }
+  ]
+}
