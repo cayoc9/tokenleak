@@ -19,6 +19,8 @@ O observador mede a chegada de marcadores de resposta de tamanho fixo, em TCP lo
 
 O alvo é um único token de entrada em posição pública oito, entre oito palavras públicas. O modelo é GPT-2 pequeno, CPU/float32, revisão `607a30d783dfa663caf39e06633721c8d4cfcd7e`, com pesos safetensors verificados, geração gulosa e KV cache apenas dentro da requisição. Essa condição é distinta de GPT-2 XL, de SPC-5K e de reconstrução integral do prompt. Não há probe físico de cache, rede externa, TLS ou serviço de terceiros.
 
+O coordenador envia as entradas e instrumenta a resposta; o classificador recebe uma visão sem rótulos/conteúdo de entrada. Isso mede a classificabilidade dessa visão controlada. Não demonstra que um adversário passivo separado consiga obter a mesma observação de uma vítima em produção. A ausência de vantagem no piloto e a disponibilidade do canal ao adversário são questões distintas.
+
 ## Separação e controles
 
 A regressão logística padronizada, C=1, foi ajustada somente na sessão zero/contextos X00/X01 (128 requisições por condição). A sessão um/contextos conhecidos é diagnóstica; a principal usa sessão dois/contextos X02/X03. Não houve escolha de parâmetros pelo teste. As duas partições adicionais de transferência e todas as métricas constam de `summary.json`.
