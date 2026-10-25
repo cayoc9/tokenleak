@@ -1,0 +1,52 @@
+{
+  "schema_version": 2,
+  "protocol_id": "M5-corpus-trace-v2-technical-smoke",
+  "task": "corpus_trace",
+  "role": "technical_smoke",
+  "hypothesis": "Record real whole-input response timings; no token reconstruction is inferred from output events.",
+  "model": {
+    "reference": "gpt2-small",
+    "id": "openai-community/gpt2",
+    "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+    "seed": 42
+  },
+  "data": {
+    "corpus_sha256": "e56a3baeb226394061fcf9ecfe030cad920d12ad022c402180c7d31216b27141",
+    "vocabulary_sha256": "abfa252b6c1338c8f485ba3be5d35b5d83378facded90d2aadaa6b92447c380d",
+    "splits_sha256": "332ea75daee4e19598faf350dcef515ac99330b6713e040ca3a1e8f887fb244a"
+  },
+  "observation": {
+    "access": "coordinator_instrumented_loopback",
+    "primary_feature": "first_response_marker_ms",
+    "physical_cache": false,
+    "input_position_alignment": false
+  },
+  "execution": {
+    "device": "cpu",
+    "dtype": "float32",
+    "threads": 2,
+    "output_steps": 2,
+    "request_bytes": 2048,
+    "warmup_requests": 1,
+    "max_seconds": 600,
+    "startup_seconds": 300
+  },
+  "design": {
+    "prompt_limit": 3,
+    "conditions": [
+      "model"
+    ],
+    "seed": 2026102403
+  },
+  "analysis": {
+    "purpose": "timing distributions only; no aligned input-token scores or reconstruction accuracy"
+  },
+  "scope": {
+    "complete_prompt_reconstruction": false,
+    "historical_spc5k_identity": false,
+    "historical_accuracy_selects_parameters": false,
+    "passive_adversary_access_established": false,
+    "candidate_source": "8431 public types from SPC5K-reconstruido-v1; direct input_ids laboratory interface",
+    "slot_position_is_public": true
+  }
+}

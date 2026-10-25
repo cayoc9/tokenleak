@@ -52,6 +52,12 @@ docker run --rm --network none --user "$(id -u):$(id -g)" \
 
 The audit reconstructs features directly from socket-read/marker records, refits the declared training-only model, checks fixed sizes and class balance, and recounts saved decisions. Passing software/data checks does not establish a generalizable attack. See the result report for the observed controls and scope.
 
+## Portable timing v2
+
+`timing_experiment.py` is the separate portable v2 entry point. Its [scientific contract](docs/TIMING_PROTOCOL_V2.md) fixes a single-slot first-marker timing hypothesis after the negative M5 result; the [operator guide](docs/RUN_TIMING_V2.md) covers read-only host inspection, a new isolated runtime, verified model download, CPU/CUDA technical smokes, the eight-candidate pilot, a separate full-input corpus trace and the larger candidate budget. It supports GPT-2 small CPU and GPT-2 XL on an explicit CUDA device. Actual GPU execution has not yet been validated.
+
+The v2 bundle includes its exact source, twelve unit tests, six configurations, frozen input data and checkpoint references. It excludes prior runs and private host records. `run` freezes the executed source and refuses output reuse. V1 code and results remain preserved. A measured response marker does not supply physical-cache observations or input-position alignment.
+
 ## Public data and artifact layout
 
 `data/corpus-v1/` contains immutable reference text/labels and splits. `results/` contains compact summaries, per-run metrics, data provenance and uncertainty. The release bundle holds the larger raw profiles, observations, predictions, server diagnostics, manifests and execution source snapshots. Private messages, credentials, workstation history and dissertation sources are excluded by an explicit export file list.

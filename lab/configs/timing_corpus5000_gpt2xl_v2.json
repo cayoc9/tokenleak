@@ -1,0 +1,52 @@
+{
+  "schema_version": 2,
+  "protocol_id": "M5-corpus-trace-v2-5000",
+  "task": "corpus_trace",
+  "role": "diagnostic",
+  "hypothesis": "Record real whole-input response timings; no token reconstruction is inferred from output events.",
+  "model": {
+    "reference": "gpt2-xl",
+    "id": "openai-community/gpt2-xl",
+    "revision": "15ea56dee5df4983c59b2538573817e1667135e2",
+    "seed": 42
+  },
+  "data": {
+    "corpus_sha256": "e56a3baeb226394061fcf9ecfe030cad920d12ad022c402180c7d31216b27141",
+    "vocabulary_sha256": "abfa252b6c1338c8f485ba3be5d35b5d83378facded90d2aadaa6b92447c380d",
+    "splits_sha256": "332ea75daee4e19598faf350dcef515ac99330b6713e040ca3a1e8f887fb244a"
+  },
+  "observation": {
+    "access": "coordinator_instrumented_loopback",
+    "primary_feature": "first_response_marker_ms",
+    "physical_cache": false,
+    "input_position_alignment": false
+  },
+  "execution": {
+    "device": "cuda:0",
+    "dtype": "float16",
+    "threads": 2,
+    "output_steps": 8,
+    "request_bytes": 2048,
+    "warmup_requests": 5,
+    "max_seconds": 86400,
+    "startup_seconds": 300
+  },
+  "design": {
+    "prompt_limit": 5000,
+    "conditions": [
+      "model"
+    ],
+    "seed": 2026102403
+  },
+  "analysis": {
+    "purpose": "timing distributions only; no aligned input-token scores or reconstruction accuracy"
+  },
+  "scope": {
+    "complete_prompt_reconstruction": false,
+    "historical_spc5k_identity": false,
+    "historical_accuracy_selects_parameters": false,
+    "passive_adversary_access_established": false,
+    "candidate_source": "8431 public types from SPC5K-reconstruido-v1; direct input_ids laboratory interface",
+    "slot_position_is_public": true
+  }
+}

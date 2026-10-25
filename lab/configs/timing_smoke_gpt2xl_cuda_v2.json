@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "protocol_id": "timing-smoke-gpt2xl-cuda-v2",
+  "task": "single_slot_ttft",
+  "role": "technical_smoke",
+  "hypothesis": "H_TTFT_v2: input token identity in one public slot changes instrumental first-marker timing enough for a fixed profiling rule to generalize to a new process and unseen public contexts.",
+  "model": {
+    "reference": "gpt2-xl",
+    "id": "openai-community/gpt2-xl",
+    "revision": "15ea56dee5df4983c59b2538573817e1667135e2",
+    "seed": 42
+  },
+  "data": {
+    "corpus_sha256": "e56a3baeb226394061fcf9ecfe030cad920d12ad022c402180c7d31216b27141",
+    "vocabulary_sha256": "abfa252b6c1338c8f485ba3be5d35b5d83378facded90d2aadaa6b92447c380d",
+    "splits_sha256": "332ea75daee4e19598faf350dcef515ac99330b6713e040ca3a1e8f887fb244a"
+  },
+  "observation": {
+    "access": "coordinator_instrumented_loopback",
+    "primary_feature": "first_response_marker_ms",
+    "physical_cache": false,
+    "input_position_alignment": false
+  },
+  "execution": {
+    "device": "cuda:0",
+    "dtype": "float16",
+    "threads": 2,
+    "output_steps": 2,
+    "request_bytes": 2048,
+    "warmup_requests": 1,
+    "max_seconds": 600,
+    "startup_seconds": 300
+  },
+  "design": {
+    "candidate_count": 2,
+    "candidate_seed": 20261024,
+    "seed": 2026102401,
+    "input_length": 16,
+    "secret_position": 8,
+    "blinding_token_id": 2134,
+    "profile_contexts": [
+      "C01-T00-000",
+      "C02-T02-000"
+    ],
+    "test_contexts": [
+      "C03-T01-000",
+      "C04-T08-000"
+    ],
+    "profile_repeats": 1,
+    "validation_repeats": 1,
+    "test_repeats": 1,
+    "conditions": [
+      "model",
+      "input_blinded",
+      "constant"
+    ]
+  },
+  "analysis": {
+    "ranking": "log_gaussian_compatibility",
+    "sigma_floor_ms": 0.001,
+    "primary_partition": "new_session_new_context",
+    "resamples": 99,
+    "seed": 2026102402
+  },
+  "scope": {
+    "complete_prompt_reconstruction": false,
+    "historical_spc5k_identity": false,
+    "historical_accuracy_selects_parameters": false,
+    "passive_adversary_access_established": false,
+    "candidate_source": "8431 public types from SPC5K-reconstruido-v1; direct input_ids laboratory interface",
+    "slot_position_is_public": true,
+    "purpose": "Technical CUDA smoke only; no scientific inference or leakage claim"
+  }
+}

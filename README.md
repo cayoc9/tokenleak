@@ -36,6 +36,18 @@ python3 lab/observe.py --output lab/runs/observation-main
 
 Only setup/model download use the internet. Collection runs in a container with external networking disabled; its service binds to loopback. Model weights are pinned safetensors and checked against the published hashes. Read the [observation contract](lab/docs/OBSERVATION_PROTOCOL.md) before interpreting its metrics.
 
+## Portable timing v2
+
+The new [v2 contract](lab/docs/TIMING_PROTOCOL_V2.md) and [operator handoff](lab/docs/RUN_TIMING_V2.md) prepare a separate timing-only experiment for GPT-2 XL on one explicit CUDA device. They preserve M5 v1. The design fixes the first-response-marker feature, profiling-only Gaussian compatibility, new-process/context tests and two negative controls. A separate routine collects the 5,000 full corpus inputs without assuming input-token timing alignment.
+
+```bash
+python3 lab/probe_host.py --output /path/to/private-records/host.json
+python3 lab/timing_experiment.py plan --config lab/configs/timing_pilot_gpt2xl_v2.json
+python3 lab/timing_experiment.py package --output /path/to/handoff/tokenleak-timing-v2.tar.gz
+```
+
+Inspection, planning and packaging need only Python's standard library. The eight-candidate pilot has 1,680 evaluation requests; the full 8,431-candidate design has 1,770,510. Technical CPU integration is checked separately; GPU execution still needs its technical smoke on the intended hardware. These tools do not establish physical cache leakage, passive-adversary access, full-prompt reconstruction or historical 73.4% reproduction.
+
 ## Data, provenance and interpretation
 
 - [Controlled corpus and partitions](lab/data/corpus-v1/): synthetic public-word prompts, not the historical SPC-5K.
