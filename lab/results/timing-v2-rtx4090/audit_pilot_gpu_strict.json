@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "role": "exploratory",
+  "task": "single_slot_ttft",
+  "observations": 1680,
+  "warmups": 45,
+  "source_hashes": 26,
+  "raw_read_marker_association_verified": true,
+  "request_seconds_by_condition": {
+    "constant": 0.06427139199999997,
+    "input_blinded": 43.12010764899998,
+    "model": 43.41830542699995
+  },
+  "physical_cache_validated": false,
+  "complete_prompt_reconstruction_validated": false,
+  "conditions": {
+    "model": {
+      "validation": {
+        "correct_top1": 4,
+        "requests": 32
+      },
+      "new_session_new_context": {
+        "correct_top1": 13,
+        "requests": 128,
+        "exact_conditional_permutation_p": 0.8539199834799114,
+        "exact_block_bootstrap_ci95": [
+          0.0703125,
+          0.1328125
+        ],
+        "monte_carlo_statistics_consistent": true
+      }
+    },
+    "input_blinded": {
+      "validation": {
+        "correct_top1": 6,
+        "requests": 32
+      },
+      "new_session_new_context": {
+        "correct_top1": 15,
+        "requests": 128,
+        "exact_conditional_permutation_p": 0.7139736239908202,
+        "exact_block_bootstrap_ci95": [
+          0.0859375,
+          0.1484375
+        ],
+        "monte_carlo_statistics_consistent": true
+      }
+    },
+    "constant": {
+      "validation": {
+        "correct_top1": 5,
+        "requests": 32
+      },
+      "new_session_new_context": {
+        "correct_top1": 14,
+        "requests": 128,
+        "exact_conditional_permutation_p": 0.8189248653174743,
+        "exact_block_bootstrap_ci95": [
+          0.078125,
+          0.1484375
+        ],
+        "monte_carlo_statistics_consistent": true
+      }
+    }
+  },
+  "run_name": "pilot_gpu",
+  "auditor_sha256": "0a66d37c631b918ce058be06ee0b589be9161c2a6576f1c9612be36df122e298",
+  "paired": {
+    "input_blinded": {
+      "difference": -0.015625,
+      "exact_ci95": [
+        -0.0546875,
+        0.0234375
+      ]
+    },
+    "constant": {
+      "difference": -0.0078125,
+      "exact_ci95": [
+        -0.03125,
+        0.015625
+      ]
+    }
+  },
+  "profiles_rankings_and_metrics_recounted": true,
+  "artifact_sha256": {
+    "config.json": "e8c37400d90925c1ba0a4f844dce5cad73e14887fd004c6b47a075b43b5be0f9",
+    "plan.json": "d9528678c16d54cd76d47de0af64038d651054e250d36788bb91e239234351b5",
+    "summary.json": "b58cb589f7fd2a94c9f009b04dabee1096867988cbc6e6be59bbe4b3bfcc2151",
+    "ground_truth.jsonl": "7bab5c5e3f292735a01f9122ca620a67aa77c88c0b41827e47e32b52c4aff2cd",
+    "observations.jsonl": "222bd719c905966b929547c03cbe9144c90862d2859b53b204e4e22a3e8cf81a",
+    "source_manifest.json": "d1f4e3951097933900857c9b4f59d6e38ef0b9a2f7c2f3b721366d6c19792404",
+    "predictions.jsonl": "5a6b6a44b70c82d035d46d8580ce2c313be829716dae39a8e78860b5102f659e"
+  }
+}

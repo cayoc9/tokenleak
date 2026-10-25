@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "role": "diagnostic",
+  "task": "corpus_trace",
+  "observations": 5000,
+  "warmups": 5,
+  "source_hashes": 26,
+  "raw_read_marker_association_verified": true,
+  "request_seconds_by_condition": {
+    "model": 388.04793095299993
+  },
+  "physical_cache_validated": false,
+  "complete_prompt_reconstruction_validated": false,
+  "conditions": {},
+  "run_name": "corpus_gpu",
+  "auditor_sha256": "0a66d37c631b918ce058be06ee0b589be9161c2a6576f1c9612be36df122e298",
+  "corpus_inputs_and_latency_distribution_verified": true,
+  "unique_input_token_types": 8431,
+  "input_token_positions": 178209,
+  "observed_response_markers": 40000,
+  "artifact_sha256": {
+    "config.json": "ead10abda5405ecd3f09d7834b8e1eeea7260e62efd2f948086cce5dc077135c",
+    "plan.json": "9c31f670b16ff45912feced66f41454d85a5bbd41d8435ba9d1f4c9d90cb46cd",
+    "summary.json": "74fafc3d107116b9d6cf7a9430ba99a40550c8a3c7679541859a61ea0beb9319",
+    "ground_truth.jsonl": "566e8a4a15efa34b5374d8333c46d78517e0fdb0fe6602acbb2c877e889e961a",
+    "observations.jsonl": "f8330b52f7635753abebf6e80c68ed00d78fb0102a391ca3d83ed006293ad4c1",
+    "source_manifest.json": "d1f4e3951097933900857c9b4f59d6e38ef0b9a2f7c2f3b721366d6c19792404"
+  }
+}

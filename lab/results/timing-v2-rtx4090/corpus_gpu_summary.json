@@ -1,0 +1,23 @@
+{
+  "protocol_id": "M5-corpus-trace-v2-5000",
+  "role": "diagnostic",
+  "task": "corpus_trace",
+  "observations": 5000,
+  "primary_feature": "first_response_marker_ms",
+  "access": "coordinator_instrumented_loopback",
+  "physical_cache_measured": false,
+  "complete_prompt_reconstruction_evaluated": false,
+  "historical_73_4_reproduced": false,
+  "pearson": "not computed",
+  "defense_overhead": "not measured",
+  "conditions": {},
+  "target": "raw timing of full inputs; no reconstruction predictions",
+  "first_marker_ms": {
+    "mean": 9.968658643200001,
+    "quantiles_05_50_95": [
+      9.647587600000001,
+      9.918953,
+      10.37942
+    ]
+  }
+}

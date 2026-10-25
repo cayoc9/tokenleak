@@ -2,13 +2,14 @@
 
 Research fork of [ufxa/tokenleak](https://github.com/ufxa/tokenleak), maintained by Cayo Murilo. The upstream scientific code, data and paper remain preserved. The original README is retained in [docs/upstream/README_071bf8e.md](docs/upstream/README_071bf8e.md).
 
-The new **[laboratory in `lab/`](lab/README.md)** separates three experimental objects:
+The new **[laboratory in `lab/`](lab/README.md)** separates the following experimental objects:
 
 | Track | Evidence | Scope |
 |---|---|---|
 | Public upstream replay | 65.453% Top-1 / 70.810% Top-5 without injected timing noise; published CSV reproduced | Reduced synthetic evaluator, 500 token types; historical 73.4%/91.2% configuration remains unreproduced |
 | Independent simulation v1 | 5,000 controlled prompts, 8,431 types, ten measurement seeds, nine conditions | New closed-vocabulary corpus, estimated profiles, learned weights, known input positions; no model inference |
 | Measured observation pilot M5 | GPT-2 small CPU, socket timings and negative controls | One controlled input-token identity among eight public candidates; distinct from complete prompt reconstruction or physical cache probing |
+| Instrumental timing v2 | GPT-2 XL on RTX 4090 CUDA; 36-request smoke, 1,680-request pilot and 5,000-input diagnostic trace | Pilot primary 13/128 versus 12.5% uniform reference; no demonstrated advantage. Corpus trace covers all 8,431 input types but supplies no input-position alignment or reconstruction accuracy |
 
 The independent simulation reaches 99.577% Top-1 under a strongly discriminative synthetic cache. Cache alone already reaches 99.475%. Sharing 128 cache fingerprints between token types reduces learned fusion to 4.638% in a paired two-seed exploratory comparison. These figures characterize the assumed channel and are not physical attack accuracy. See [results and limits](lab/docs/RESULTS_SIMULATION.md).
 
@@ -46,7 +47,7 @@ python3 lab/timing_experiment.py plan --config lab/configs/timing_pilot_gpt2xl_v
 python3 lab/timing_experiment.py package --output /path/to/handoff/tokenleak-timing-v2.tar.gz
 ```
 
-Inspection, planning and packaging need only Python's standard library. The eight-candidate pilot has 1,680 evaluation requests; the full 8,431-candidate design has 1,770,510. Technical CPU integration is checked separately; GPU execution still needs its technical smoke on the intended hardware. These tools do not establish physical cache leakage, passive-adversary access, full-prompt reconstruction or historical 73.4% reproduction.
+Inspection, planning and packaging need only Python's standard library. The eight-candidate pilot has 1,680 evaluation requests; the full 8,431-candidate design has 1,770,510. Technical CPU/GPU integration and an exploratory RTX 4090 pilot are documented in [the GPU results](lab/docs/RESULTS_TIMING_V2_GPU.md). Each new hardware deployment still needs its own technical smoke. These tools do not establish physical cache leakage, passive-adversary access, full-prompt reconstruction or historical 73.4% reproduction.
 
 ## Data, provenance and interpretation
 

@@ -1,0 +1,79 @@
+{
+  "protocol_id": "timing-smoke-gpt2xl-cuda-v2",
+  "role": "technical_smoke",
+  "task": "single_slot_ttft",
+  "observations": 36,
+  "primary_feature": "first_response_marker_ms",
+  "access": "coordinator_instrumented_loopback",
+  "physical_cache_measured": false,
+  "complete_prompt_reconstruction_evaluated": false,
+  "historical_73_4_reproduced": false,
+  "pearson": "not computed",
+  "defense_overhead": "not measured",
+  "conditions": {
+    "model": {
+      "validation": {
+        "requests": 4,
+        "correct_top1": 2,
+        "top1": 0.5,
+        "top5": 1.0,
+        "candidate_count": 2,
+        "uniform_top1": 0.5,
+        "uniform_top5": 1.0
+      },
+      "new_session_new_context": {
+        "requests": 4,
+        "correct_top1": 1,
+        "top1": 0.25,
+        "top5": 1.0,
+        "candidate_count": 2,
+        "uniform_top1": 0.5,
+        "uniform_top5": 1.0,
+        "inference": "not computed; technical smoke is not scientific confirmation"
+      }
+    },
+    "input_blinded": {
+      "validation": {
+        "requests": 4,
+        "correct_top1": 2,
+        "top1": 0.5,
+        "top5": 1.0,
+        "candidate_count": 2,
+        "uniform_top1": 0.5,
+        "uniform_top5": 1.0
+      },
+      "new_session_new_context": {
+        "requests": 4,
+        "correct_top1": 1,
+        "top1": 0.25,
+        "top5": 1.0,
+        "candidate_count": 2,
+        "uniform_top1": 0.5,
+        "uniform_top5": 1.0,
+        "inference": "not computed; technical smoke is not scientific confirmation"
+      }
+    },
+    "constant": {
+      "validation": {
+        "requests": 4,
+        "correct_top1": 2,
+        "top1": 0.5,
+        "top5": 1.0,
+        "candidate_count": 2,
+        "uniform_top1": 0.5,
+        "uniform_top5": 1.0
+      },
+      "new_session_new_context": {
+        "requests": 4,
+        "correct_top1": 3,
+        "top1": 0.75,
+        "top5": 1.0,
+        "candidate_count": 2,
+        "uniform_top1": 0.5,
+        "uniform_top5": 1.0,
+        "inference": "not computed; technical smoke is not scientific confirmation"
+      }
+    }
+  },
+  "interpretation": "Technical execution only; no leakage claim."
+}

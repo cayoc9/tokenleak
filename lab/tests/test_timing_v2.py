@@ -8,6 +8,8 @@ import unittest
 
 import numpy as np
 
+from audit_timing_v2 import exact_block_interval, exact_permutation_p, null_histogram
+
 from tokenleak_observation.transport import Observer, marker
 from tokenleak_timing.contract import APP, dump, load_config, materialize, plan, validate, verify_model
 from tokenleak_timing.evaluate import evaluate, feature, fit_profile, paired_interval, rank, uncertainty
@@ -91,6 +93,16 @@ class TimingV2Contracts(unittest.TestCase):
         self.assertTrue(np.isfinite(scores).all())
         tied = {'candidate_ids': [25, 262], 'mean_ms': [1., 1.], 'sigma_ms': [.1, .1]}
         np.testing.assert_array_equal(rank([2.], tied)[0], [[25, 262]])
+
+    def test_independent_exact_null_and_bootstrap_have_known_small_distributions(self):
+        self.assertEqual(dict(null_histogram((1, 1), 2)), {2: 1, 0: 1})
+        self.assertEqual(dict(null_histogram((2,), 2)), {1: 2})
+        primary = [{'context_id': context, 'repeat': repeat, 'truth': candidate,
+                    'prediction': candidate, 'correct': True}
+                   for context in ['a', 'b'] for repeat in range(2) for candidate in [0, 1]]
+        self.assertEqual(exact_permutation_p(primary, 2), 1/16)
+        self.assertEqual(exact_block_interval([0, 2], 2), [0., 1.])
+        self.assertEqual(exact_block_interval([-1, 1], 2), [-.5, .5])
 
     def test_missing_request_cannot_shrink_denominator(self):
         with tempfile.TemporaryDirectory() as temporary:

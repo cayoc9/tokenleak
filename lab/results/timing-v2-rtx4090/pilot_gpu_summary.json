@@ -1,0 +1,121 @@
+{
+  "protocol_id": "M5-TTFT-v2",
+  "role": "exploratory",
+  "task": "single_slot_ttft",
+  "observations": 1680,
+  "primary_feature": "first_response_marker_ms",
+  "access": "coordinator_instrumented_loopback",
+  "physical_cache_measured": false,
+  "complete_prompt_reconstruction_evaluated": false,
+  "historical_73_4_reproduced": false,
+  "pearson": "not computed",
+  "defense_overhead": "not measured",
+  "conditions": {
+    "model": {
+      "validation": {
+        "requests": 32,
+        "correct_top1": 4,
+        "top1": 0.125,
+        "top5": 0.59375,
+        "candidate_count": 8,
+        "uniform_top1": 0.125,
+        "uniform_top5": 0.625
+      },
+      "new_session_new_context": {
+        "requests": 128,
+        "correct_top1": 13,
+        "top1": 0.1015625,
+        "top5": 0.625,
+        "candidate_count": 8,
+        "uniform_top1": 0.125,
+        "uniform_top5": 0.625,
+        "ci95": [
+          0.078125,
+          0.1328125
+        ],
+        "one_sided_permutation_p": 0.8580709645177411,
+        "bootstrap_unit": "repetition block; fixed candidates, contexts, device and sessions",
+        "permutation_unit": "labels within context x repetition; fixed profile and decisions",
+        "blocks": 8,
+        "resamples": 2000
+      }
+    },
+    "input_blinded": {
+      "validation": {
+        "requests": 32,
+        "correct_top1": 6,
+        "top1": 0.1875,
+        "top5": 0.65625,
+        "candidate_count": 8,
+        "uniform_top1": 0.125,
+        "uniform_top5": 0.625
+      },
+      "new_session_new_context": {
+        "requests": 128,
+        "correct_top1": 15,
+        "top1": 0.1171875,
+        "top5": 0.6328125,
+        "candidate_count": 8,
+        "uniform_top1": 0.125,
+        "uniform_top5": 0.625,
+        "ci95": [
+          0.0859375,
+          0.1484375
+        ],
+        "one_sided_permutation_p": 0.7056471764117941,
+        "bootstrap_unit": "repetition block; fixed candidates, contexts, device and sessions",
+        "permutation_unit": "labels within context x repetition; fixed profile and decisions",
+        "blocks": 8,
+        "resamples": 2000
+      }
+    },
+    "constant": {
+      "validation": {
+        "requests": 32,
+        "correct_top1": 5,
+        "top1": 0.15625,
+        "top5": 0.59375,
+        "candidate_count": 8,
+        "uniform_top1": 0.125,
+        "uniform_top5": 0.625
+      },
+      "new_session_new_context": {
+        "requests": 128,
+        "correct_top1": 14,
+        "top1": 0.109375,
+        "top5": 0.5703125,
+        "candidate_count": 8,
+        "uniform_top1": 0.125,
+        "uniform_top5": 0.625,
+        "ci95": [
+          0.078125,
+          0.1484375
+        ],
+        "one_sided_permutation_p": 0.8115942028985508,
+        "bootstrap_unit": "repetition block; fixed candidates, contexts, device and sessions",
+        "permutation_unit": "labels within context x repetition; fixed profile and decisions",
+        "blocks": 8,
+        "resamples": 2000
+      }
+    }
+  },
+  "paired_primary": {
+    "input_blinded": {
+      "difference": -0.015625,
+      "ci95": [
+        -0.0546875,
+        0.0234375
+      ],
+      "unit": "paired repetition blocks, fixed contexts and candidates"
+    },
+    "constant": {
+      "difference": -0.0078125,
+      "ci95": [
+        -0.03125,
+        0.015625
+      ],
+      "unit": "paired repetition blocks, fixed contexts and candidates"
+    }
+  },
+  "interpretation": "Conditional estimates for one public input slot. Inspect controls and replicate independently; no automatic declaration of attack validation, passive access, or prompt reconstruction."
+}

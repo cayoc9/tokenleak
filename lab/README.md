@@ -1,6 +1,6 @@
 # TokenLeak laboratory
 
-This is the self-contained development tree for the independent methodology. It requires no dissertation checkout. The original `src/` evaluator remains a separate reference. The [root guide](../README.md) presents the three experimental tracks; [metric explanations in Portuguese](docs/METRICS.md) connect claims and denominators.
+This is the self-contained development tree for the independent methodology. It requires no dissertation checkout. The original `src/` evaluator remains a separate reference. The [root guide](../README.md) presents the experimental tracks; [metric explanations in Portuguese](docs/METRICS.md) connect claims and denominators.
 
 ## Simulation
 
@@ -54,9 +54,9 @@ The audit reconstructs features directly from socket-read/marker records, refits
 
 ## Portable timing v2
 
-`timing_experiment.py` is the separate portable v2 entry point. Its [scientific contract](docs/TIMING_PROTOCOL_V2.md) fixes a single-slot first-marker timing hypothesis after the negative M5 result; the [operator guide](docs/RUN_TIMING_V2.md) covers read-only host inspection, a new isolated runtime, verified model download, CPU/CUDA technical smokes, the eight-candidate pilot, a separate full-input corpus trace and the larger candidate budget. It supports GPT-2 small CPU and GPT-2 XL on an explicit CUDA device. Actual GPU execution has not yet been validated.
+`timing_experiment.py` is the separate portable v2 entry point. Its [scientific contract](docs/TIMING_PROTOCOL_V2.md) fixes a single-slot first-marker timing hypothesis after the negative M5 result; the [operator guide](docs/RUN_TIMING_V2.md) covers read-only host inspection, a new isolated runtime, verified model download, CPU/CUDA technical smokes, the eight-candidate pilot, a separate full-input corpus trace and the larger candidate budget. It supports GPT-2 small CPU and GPT-2 XL on an explicit CUDA device. The RTX 4090 GPU technical smoke, exploratory pilot and 5,000-input diagnostic trace completed on 2026-10-25; [the pilot had no demonstrated advantage](docs/RESULTS_TIMING_V2_GPU.md). This does not validate a physical cache attack.
 
-The v2 bundle includes its exact source, twelve unit tests, six configurations, frozen input data and checkpoint references. It excludes prior runs and private host records. `run` freezes the executed source and refuses output reuse. V1 code and results remain preserved. A measured response marker does not supply physical-cache observations or input-position alignment.
+The v2 bundle includes its exact source, thirteen unit tests, six configurations, frozen input data and checkpoint references. It excludes prior runs and private host records. `run` freezes the executed source and refuses output reuse. V1 code and results remain preserved. A measured response marker does not supply physical-cache observations or input-position alignment. `audit_timing_v2.py` independently recounts bounded pilot/corpus artifacts using only the standard library, including exact conditional null checks for up to eight classes. The full-candidate classification audit remains separate work.
 
 ## Public data and artifact layout
 

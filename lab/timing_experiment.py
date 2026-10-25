@@ -26,10 +26,11 @@ def source_files():
             if path.is_file() and path.suffix in {'.py', '.json', '.md'} and '__pycache__' not in path.parts:
                 selected[str(path.relative_to(APP))] = path
     for pattern in ['configs/timing_*_v2.json', 'tests/test_timing_v2.py',
-                    'docs/TIMING_PROTOCOL_V2.md', 'docs/RUN_TIMING_V2.md']:
+                    'docs/TIMING_PROTOCOL_V2.md', 'docs/RUN_TIMING_V2.md',
+                    'docs/RESULTS_TIMING_V2_GPU.md']:
         for path in APP.glob(pattern):
             selected[str(path.relative_to(APP))] = path
-    for name in ['timing_experiment.py', 'probe_host.py', 'requirements-timing.lock',
+    for name in ['timing_experiment.py', 'audit_timing_v2.py', 'probe_host.py', 'requirements-timing.lock', 'requirements-timing-gpu.lock',
                  'tokenleak_observation/__init__.py', 'tokenleak_observation/transport.py',
                  'data/corpus-v1/corpus.jsonl', 'data/corpus-v1/vocabulary.json',
                  'data/corpus-v1/splits.json']:

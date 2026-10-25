@@ -1,6 +1,6 @@
 # Portable timing experiment: operator handoff
 
-Read [the scientific contract](TIMING_PROTOCOL_V2.md) first. CPU integration is tested independently of the original M5; CUDA code is provided for a technical smoke on the intended GPU and has not yet been executed on a GPU. Keep the original v1 outputs intact.
+Read [the scientific contract](TIMING_PROTOCOL_V2.md) first. CPU integration is tested independently of the original M5. CUDA was also exercised on an RTX 4090 KVM VM on 2026-10-25: the technical smoke, eight-candidate pilot and full corpus trace completed and were audited. The exploratory pilot did not demonstrate advantage; see [results and limits](RESULTS_TIMING_V2_GPU.md). A new deployment still needs its own technical smoke. Keep the original v1 outputs intact.
 
 Verification on 2026-10-24: all 30 laboratory unit tests passed. An extracted portable bundle passed its v2 tests and completed the two CPU integration paths offline with the existing small checkpoint: 36 evaluation requests plus nine warmups for the single-slot task, and three full-input requests plus one warmup for the corpus path. An external standard-library recount verified raw read/marker association, source hashes, profiles, predictions and denominators. These are technical checks; they do not extend M5's scientific conclusions. The tested collector/evaluator source is unchanged by the final addition of the resampling unit test and this verification note.
 
@@ -32,7 +32,7 @@ python3.11 -m venv /path/to/new-tokenleak-venv
 /path/to/new-tokenleak-venv/bin/python -m pip freeze > /path/to/private-records/pip-freeze.txt
 ```
 
-For a CPU environment replace the PyTorch wheel index with `https://download.pytorch.org/whl/cpu`. The version/index combinations come from [official PyTorch installation instructions](https://pytorch.org/get-started/previous-versions/#v231). The lock fixes the Python dependencies inherited from the tested CPU runtime; CUDA wheel dependencies and the host driver must also be recorded by the operator. The runner checks Torch/Transformers/NumPy versions, device and dtype, and refuses a silent CPU fallback.
+For a CPU environment replace the PyTorch wheel index with `https://download.pytorch.org/whl/cpu`. The version/index combinations come from [official PyTorch installation instructions](https://pytorch.org/get-started/previous-versions/#v231). The original lock fixes the Python dependencies inherited from the tested CPU runtime; [requirements-timing-gpu.lock](../requirements-timing-gpu.lock) additionally records all packages from the tested CUDA environment. Install the specified Torch wheel first, then use that GPU lock if matching this environment. Host driver/system libraries must also be recorded by the operator. The runner checks Torch/Transformers/NumPy versions, device and dtype, and refuses a silent CPU fallback.
 
 The explicit download command verifies every asset against the immutable shipped reference, including all SHA-256 values. It requires internet access; collection loads only local assets and sets Hugging Face offline mode. Network isolation can additionally be supplied by the host/container policy.
 
@@ -44,7 +44,7 @@ Use `--reference gpt2-small` for the CPU smoke. Downloads never overwrite a conf
 
 ## 3. Check software and run the technical smoke
 
-The bundle includes the twelve v2 unit tests, which require NumPy but do not load Torch or a model:
+The current bundle includes thirteen v2 unit tests, which require NumPy but do not load Torch or a model:
 
 ```bash
 cd lab
@@ -96,7 +96,17 @@ If the declared design fits the agreed job window:
 
 This measures the single-slot timing hypothesis under all public candidates. It does not reproduce the paper's historical fused 73.4%, supply a physical cache channel or reconstruct complete prompts. A negative result remains a valid outcome.
 
-## 6. Package and return evidence
+## 6. Audit bounded runs independently
+
+The new standard-library auditor checks raw markers, labels/counts, corpus inputs, source hashes, profiles, rankings and metrics without importing the experiment evaluator. For the eight-candidate primary test it additionally enumerates the exact conditional permutation null and empirical block-bootstrap distribution. Its exact intervals can differ slightly from the original finite-resample interval; both are identified separately.
+
+```bash
+python3 lab/audit_timing_v2.py --run /path/to/private-runs/xl-pilot-001 --report /path/to/new-audit.json
+```
+
+It supports technical smokes, classification with up to eight candidates, and the diagnostic corpus trace. It deliberately refuses the full 8,431-class classification run: an appropriately scalable independent audit remains required for that design. Use Python without `-O`; reports are never overwritten.
+
+## 7. Package and return evidence
 
 ```bash
 python3 lab/timing_experiment.py package --output /path/to/handoff/tokenleak-timing-v2.tar.gz

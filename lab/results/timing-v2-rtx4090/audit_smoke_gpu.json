@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "role": "technical_smoke",
+  "task": "single_slot_ttft",
+  "observations": 36,
+  "warmups": 9,
+  "source_hashes": 26,
+  "raw_read_marker_association_verified": true,
+  "request_seconds_by_condition": {
+    "constant": 0.0013800170000000003,
+    "input_blinded": 0.23640670400000002,
+    "model": 0.232389205
+  },
+  "physical_cache_validated": false,
+  "complete_prompt_reconstruction_validated": false,
+  "conditions": {
+    "model": {
+      "validation": {
+        "correct_top1": 2,
+        "requests": 4
+      },
+      "new_session_new_context": {
+        "correct_top1": 1,
+        "requests": 4
+      }
+    },
+    "input_blinded": {
+      "validation": {
+        "correct_top1": 2,
+        "requests": 4
+      },
+      "new_session_new_context": {
+        "correct_top1": 1,
+        "requests": 4
+      }
+    },
+    "constant": {
+      "validation": {
+        "correct_top1": 2,
+        "requests": 4
+      },
+      "new_session_new_context": {
+        "correct_top1": 3,
+        "requests": 4
+      }
+    }
+  },
+  "run_name": "smoke_gpu",
+  "auditor_sha256": "0a66d37c631b918ce058be06ee0b589be9161c2a6576f1c9612be36df122e298",
+  "profiles_rankings_and_metrics_recounted": true,
+  "artifact_sha256": {
+    "config.json": "1029d52656135e2206dd72fd1c9cb4ad33abb44aad687a07cd040abe85742706",
+    "plan.json": "8d264959180beaf4b4721ff8a7ac6c6234c369a3e014e43b2a7b8adf37c9de41",
+    "summary.json": "3c70cddf0096159ef8ca5e1eae8a92a631f97d19e5993fbbfa1e667e939d7a57",
+    "ground_truth.jsonl": "257a9dcb8c44b55812bbb1af573c9d1b3a7e226729c9ffa6fd9877750a8ab707",
+    "observations.jsonl": "02cdf664be8024c76c233ba28dbc2b9c6e6fe08488861442e8ebb1606907029e",
+    "source_manifest.json": "d1f4e3951097933900857c9b4f59d6e38ef0b9a2f7c2f3b721366d6c19792404",
+    "predictions.jsonl": "b2ee3cacc0efc86685817b5e96bb003651d21a04766d177232ac921851904b1f"
+  }
+}
